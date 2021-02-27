@@ -1,0 +1,28 @@
+extends base.pug 
+block style 
+    style 
+        include ../static/Navbar.css
+        include ../static/Signup.css
+block script 
+    script 
+        include ../static/hey.js
+block content 
+    main
+        div.SUHeading
+            h1 SignUp 
+        div.basicInfo
+            form(action="/signup", method="post", class="SUform") 
+                | Your Name 
+                input(type="text", name="Name", class="SUinput", placeholder="Enter Your Full Name Here")
+                | Your Email
+                input(type="email", name="Email", class="SUinput", placeholder="Enter Your Email Here")
+                | Your Password 
+                input(type="password", name="Password", class="SUinput", placeholder="Enter Your Password Here")
+                | Your Address 
+                input(type="text", name="Address", class="SUinput", placeholder="Enter Your Address Here ")
+                | Your Phone No.
+                input(type="text", name="PhoneNo", class="SUinput", placeholder="Enter Your Phone No. Here")
+                input(type="submit", value="Submit", class="SUinputBtn")
+            
+
+               

@@ -1,0 +1,25 @@
+extends base.pug
+
+block style 
+    style 
+        include ../static/login.css
+        include ../static/Navbar.css
+block script 
+
+block content
+    main  
+        div.bgImage        
+        div.liHeading
+            h1 login 
+        form(action="/login", method="post" class="loginForm")
+            | Your Email 
+            input(type="email", name="email" class="Inlgnfrm" placeholder="Enter Your Email")
+            | Your Password 
+            input(type="password", name="pass" class="Inlgnfrm" placeholder="Enter Your Password")
+            input(type="submit", value="Submit" class="InlgnfrmBtn")
+        div.CreateAccount
+            | OR
+            a(href='/signup') Create an Account
+            
+
+

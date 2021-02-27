@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Shippori+Mincho+B1:wght@600&display=swap');
+main{
+    margin-top: 120px;
+}
+/*making the blur background*/
+.bgImage{
+    /*background-image: url("https://image.freepik.com/free-photo/hand-holding-globe-grass-nature_34152-62.jpg");
+    width: 100%;*/
+    height: 45pc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    
+}
+/*styling the heading*/
+.liHeading{
+    height: 60px;
+    width: fit-content;
+    max-width: 100%;
+    margin: 3px auto;
+    text-align: center;
+    
+    
+}
+/*styling the h1*/
+.liHeading h1{
+    font-size: 3em;
+    border-bottom: 3px solid maroon;
+    text-transform: uppercase;
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+/*styling the form*/
+.loginForm{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Inlgnfrm{
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+    height: 30px;
+    outline: none;
+    border-radius: 20px;
+    border-color: maroon;
+}
+/*styling the submit button*/
+.InlgnfrmBtn{
+    width: fit-content;
+    height: 30px;
+    font-size: .5em;
+    border-radius: 5px;
+    
+}
+/*styling the create an account section*/
+.CreateAccount{
+    border: 1px solid gray;
+    box-shadow: 0px 0px 5px gray;
+    width: fit-content;
+    margin: 5px auto;
+    display: grid;
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+/*styling the link*/
+.CreateAccount a{
+    color: black;
+}

@@ -1,0 +1,82 @@
+/*styling the padding and margin 0*/
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*styling the header*/
+header{
+    position: fixed;
+    top: 0;
+    height: 150px;
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(180deg,#18cc18 5%, white 100%);
+    box-shadow: 0px 0px 5px gray; 
+    font-family: 'RocknRoll One', sans-serif;   
+
+}
+
+header>h1{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3em;
+}
+/*styling the navigation bar*/
+nav{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+
+    top: 100px;
+ 
+}
+/*styling the links*/
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 15px;
+    font-size: 1.2em;
+}
+
+/*making the main 150px down*/
+main{
+    margin-top: 150px;
+    z-index: -1;
+}
+/*styling the infoSection Background image*/
+/*.infoSecOneBgImg{
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    background-image:  url("https://images.unsplash.com/photo-1438109382753-8368e7e1e7cf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FyZGVuaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .8;
+    z-index: -1;  
+}*/
+/*styling the info Section */
+.infoSecOne{
+    height: 600px;
+    width: 100%;
+    color: black;
+    background: #93eb9a;   
+}
+
+/*styling the container class*/
+.container{
+    height: 550px;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    border: 1px solid black;
+}

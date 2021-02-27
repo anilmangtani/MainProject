@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Shippori+Mincho+B1:wght@600&display=swap');
+main{
+    margin-top: 120px;
+    height: 40pc;
+    border: 1px solid black;
+}
+.SUHeading{
+    height: fit-content;
+    width: fit-content;
+    margin: 15px auto;
+    
+    text-align: center;
+}
+/*styling the h1 in signUp*/
+.SUHeading h1{
+    font-size: 3em;
+    border-bottom: 3px solid maroon;
+    text-transform: uppercase;
+    font-family: 'Shippori Mincho B1', serif;
+}
+/*styling the basic Information in the sign Up page*/
+.SUform{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/*styling the inputs of the Sign Up*/
+.SUinput{
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+    height: 30px;
+    outline: none;
+    border-radius: 20px;
+    border-color: maroon;
+}
+/*styling the submit Button*/
+.SUinputBtn{
+    width: fit-content;
+    height: 30px;
+    font-size: .7em;
+
+}
