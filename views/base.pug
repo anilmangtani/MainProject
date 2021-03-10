@@ -7,18 +7,49 @@ html(lang="en")
         title Document
         block style 
             style 
-                include ../static/Navbar.css
-        block script         
-    body 
+                include ../static/base.css
+            style     
+                include ../static/chatting.css
+             
+    body
         nav.basenavbar 
             .NBWrapper 
-                    ul#navlist 
-                        li #[a(href="") Home]
-                        li #[a(href="") Shop]
-                        li #[a(href="") Home]
-                        li #[a(href="") Information]
-                        li #[a(href="") About us]
-                        li #[a(href="/login") Log In]
+                ul.navlist#mytopnav
+                    li #[a.active(href="") Home]
+                    li #[a(href="") Plants]
+                    li #[a(href="") Seeds]
+                    li #[a(href="") Fruits]
+                    li #[a(href="") Veges]
+                    li #[a(href="") Shop]
+                    li #[a(href="") Other Stuff]
+                    li #[a(href="/login") Log In]
+                    li #[a(href="/signup") My Account]
+                .navmenu#navbutton 
+                    .menu-line 
+                    .menu-line 
+                    .menu-line 
+        main
+            //- nav.ChatBox
+                .chattingNavBar#chatnavbar
+                    .chattingContent
+                        .Chatlogo
+                            h1 TheChatBox
+                        .Chatlinks
+                            .chatLinksLogo 
+                                a(href="mailto:") #[img(src="../static/images/EmailLogo.jpg")] 
+
+                                a(href="tel:+00000000") #[img(src="../static/images/PhoneLogo.jpg")]
+                                
+                .chatBoxContainer#chtcontainer
+                    
+                .ChatBoxLogo#chtbtn
+                    img(src="../static/images/ChatLogo.jpg", alt="", srcset="")
+                .ChatDisplay         
         block content  
-        block footer 
+        
+        block footer
+        block script  
+            script 
+                include ../static/navbar.js     
+
         

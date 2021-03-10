@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*styling the main for the current page*/
+main{
+    margin-top: 72px;
+}
+/*making the display none of the myslides class in the navigation bar*/
+.mySlides{
+    display: none;
+    background-color: #bdfcb5;
+}
+/*assigning the verticle align middle to the img*/
+img{
+    vertical-align: middle;
+}
+/*styling the slideShow Container*/
+.slideshow-container{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    border: 1px solid black;
+    height: 70vh;
+}
+/*Styling the Slide Image Container*/
+.SlideImage{
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+.SlideImage img{
+    height: 100%;
+    animation-name: zoomin;
+    animation-duration: 40s;
+    transform: scale(1.5, 1.5);
+}
+/*calling the zoomin animation*/
+@keyframes zoomin{
+    from{ transform: scale(1, 1);}
+    to{transform: scale(1.5, 1.5);}
+    
+}
+
+/*styling the previous and next button in the slider*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+    width: 4%;
+    height: 70px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color:white;
+    box-shadow: 0px 0px 5px grey;
+
+}
+/*styling the left button in the navigation bar*/
+.prev{
+    left: 20px;
+}
+/*styling the right button in the navigation bar*/
+.next{
+    right: 20px;
+}
+/*On hover, add a black background */
+.prev:hover,.next:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+/*styling the text in the navigation bar*/
+.text{
+    color: black;
+    font-size: 35px;
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    width: 700px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.123);
+    animation-name: textani;
+    animation-duration: 2s;
+    
+}
+/*styling the animation in the text in the slider*/
+@keyframes textani{
+    from{ right: 30%;}
+    to{right: 10%;}
+}
+.text h1{
+    color:mediumspringgreen;
+    font-family: cursive;
+    width: fit-content;
+    font-size: 50px;
+    text-shadow: 0px 0px 5px black;
+    margin: 0px auto;
+}
+/*styling the p in the text*/
+.text p{
+    font-size: 30px;
+    font-weight: 100;
+    color: wheat;
+    text-shadow: 0px 0px 10px black;
+}
+/*styling the dot in the navigation bars*/
+.dot{
+    text-align: center;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: maroon;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+    z-index: 13; 
+}
+/*styling the active(add from js) and hover to the dots*/
+.Sliactive, .dor:hover{
+    background-color: #717171;
+}
+/*Fading animation*/
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from{ opacity: .4;}
+    to{ opacity: 1;} 
+}
+     /*STYLING THE SECTION TWO PART: WHERE NEWPRODUCTS ARE PLACED BELOW THE SLIDER*/
+/*styling the New Products Home parent*/
+.NewPrdctsHome{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    height: 250px;
+    width: 30%;
+    border:  1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffff;
+}
+.NewPrdctsHome h1{
+    width: fit-content;
+    margin: 0px auto;
+    font-family: cursive;
+}
+/*styling the container of the new products Home*/
+.NewPrdctsHome-Container{
+    height: 100%;
+    width: 100%;
+    background-color: #ffff;
+}
+/*Styling the new products home that will contain all the images: Parent of imaages*/
+.NewPrdctsHome-Products{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+/*Styling the a in the new products home*/
+.NewPrdctsHome-Products a{
+    text-decoration: none;
+}
+/*Styling the products in the new products*/
+.PrdctsHome1, .PrdctsHome2, .PrdctsHome3{
+    width: 33%;
+    height: 100%;
+    border-left: 1px solid gray;
+}
+.prdctHomeImg{
+    height: 150px;
+    margin-bottom: 0px;
+    padding: 0 10px;
+}
+.prdctHomeImg img{
+    border-radius: 10px;
+}
+.prdctHomeName{
+    margin: 0px;
+    color: black;
+    text-align: center;
+}
+.prdctHomeName h2{
+    font-size: 1.3em;
+}
+/*styling the quotes of the day in home page*/
+.HomeQtsOne-Container{
+    margin-top: 150px;
+    width: 100%;
+    height: 30vh;
+  
+}
+/*styling the heading container in the home page*/
+.HomeQtsOne-heading{
+    position: relative;
+    width: 20%;
+    height: fit-content;
+    margin: 0px auto;
+    text-align: center;
+    overflow: hidden;
+    display: inline;
+}
+/*styling the h1 in the quote of the day part*/
+.HomeQtsOne-heading h1{
+    width: fit-content;
+    font-size: 2.5em;
+    margin: 0px auto 0px auto;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    border-bottom: 3px solid maroon;
+}
+/*styling the parent of the quotes and image in the section part*/
+.HomeQtsOne-items{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    margin-top: 10px;
+    background-color: rgb(52, 218, 240);
+    border-radius: 40px;
+}
+/*styling the quote parent in the quote section*/
+.HomeQtsOne-quote{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+/*styling the quote in the quote section*/
+.HomeQtsOne-quote q{
+    position: relative;
+    top: 20%;
+    text-align: center;
+    font-size: 2.5em;  
+}
+/*styling the quote in the quote section*/
+.HomeQtsOne-quote em{
+    position: relative;
+    top: 25%;
+}
+.HomeQtsOne-image{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    border-radius: 100px;
+    overflow: hidden;
+    height: 70%;
+    width: 10%;
+}
+
+
+
+/*Styling in the device that will hav max width of 800px: Tablets*/
+@media only screen and (max-width: 800px) {
+    .text{
+        width: 300px;
+    }
+    .text h1{
+      font-size: 30px;
+    }
+    .text p{
+        font-size: 20px ;
+    }
+    .slideshow-container{
+        height: 40vh;
+    }
+    .SlideImage{
+        height: 40vh;
+    }
+    
+    img{
+        height: 100%;
+    }
+    .prev,.next{
+        top: 70px;
+        background-color:transparent;
+        box-shadow: none;
+        border: none;
+
+    }
+    /*styling the new product at home*/
+    .NewPrdctsHome{
+        position: relative;
+        margin: 10px 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    /*styling the quotes of the day in home page*/
+    .HomeQtsOne-Container{
+        margin-top: 10px;
+    }
+    /*styling the quote in the quote section*/
+    .HomeQtsOne-quote q{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    /*styling the gif in the quotes section in the home page*/
+    .HomeQtsOne-image{
+        left: 0px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 400px) {
+    .text{
+        width: 200px;
+    }
+    .text h1{
+      font-size: 20px;
+    }
+    .text p{
+        font-size: 15px ;
+    }
+    .slideshow-container{
+        height: 30vh;
+    }
+    .SlideImage{
+        height: 30vh;
+    }
+    
+    img{
+        height: 100%;
+    }
+    .prev,.next{
+        top: 70px;
+    }
+    
+    
+    
+  }

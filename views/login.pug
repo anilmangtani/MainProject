@@ -3,23 +3,30 @@ extends base.pug
 block style 
     style 
         include ../static/login.css
-        include ../static/Navbar.css
+        include ../static/base.css
+        include ../static/chatting.css
 block script 
-
+    script 
+        include ../static/login.js
 block content
     main  
-        div.bgImage        
-        div.liHeading
-            h1 login 
-        form(action="/login", method="post" class="loginForm")
-            | Your Email 
-            input(type="email", name="email" class="Inlgnfrm" placeholder="Enter Your Email")
-            | Your Password 
-            input(type="password", name="pass" class="Inlgnfrm" placeholder="Enter Your Password")
-            input(type="submit", value="Submit" class="InlgnfrmBtn")
-        div.CreateAccount
-            | OR
-            a(href='/signup') Create an Account
-            
+        div.bgImage
+        div.loginQuote
+            q I hope that while so many people are out smelling the flowers, someone is taking the time to plant some. — Herbert Rappaport
+        div.loginform
+            div.loginformBg        
+            div.liHeading
+                h1 login 
+            form(action="/login", method="post" class="loginForm" onsubmit="return log()")
+
+                input(type="email", name="email" class="Inlgnfrm" placeholder="Enter Your Email", id="loginEmail")
+                input(type="password", name="pass" class="Inlgnfrm" placeholder="Enter Your Password", id="loginPass")
+                input(type="submit", value="Login" class="InlgnfrmBtn")
+            div.CreateAccount
+                | Don't have account, Click on 
+                a(href='/signup') Create an Account
+block script  
+    script 
+        include ../static/navbar.js             
 
 

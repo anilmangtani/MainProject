@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Shippori+Mincho+B1:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 main{
     margin-top: 120px;
 }
 /*making the blur background*/
 .bgImage{
-    /*background-image: url("https://image.freepik.com/free-photo/hand-holding-globe-grass-nature_34152-62.jpg");
-    width: 100%;*/
+    background-image: url("https://images.all-free-download.com/images/graphicthumb/green_leaf_background_03_hd_pictures_169229.jpg");
+    width: 100%;
     height: 45pc;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,48 +13,109 @@ main{
     position: absolute;
     top: 0;
     z-index: -1;
+    filter: blur(5px);
     
+}
+/*styling the quote on the login page*/
+.loginQuote{
+    width: 85%;
+    height: fit-content;
+    margin: 10px auto 0px auto;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px gray;
+    color: black;
+    border: 1px solid gray;
+}
+/*styling the q tag*/
+.loginQuote>q{
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+}
+/*styling the wrapper of list : loginform*/
+.loginform{
+    position: relative;
+    margin: 10px auto;
+    width: 35%;
+    height: 450px;
+    border: 1px solid gray;
+    top: 35px;
+    box-shadow: 0px 0px 10px gray;
+}
+/*styling the bg of login form*/
+.loginformBg{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    z-index: -1;
+    opacity: .4;
 }
 /*styling the heading*/
 .liHeading{
     height: 60px;
     width: fit-content;
     max-width: 100%;
-    margin: 3px auto;
+    margin:0px auto;
     text-align: center;
-    
-    
 }
 /*styling the h1*/
 .liHeading h1{
     font-size: 3em;
     border-bottom: 3px solid maroon;
     text-transform: uppercase;
-    font-family: 'Shippori Mincho B1', serif;
+    font-family: 'Cinzel', serif;
+    font-weight: 500;    
+    margin: 10px auto;
+
 }
+
 
 /*styling the form*/
 .loginForm{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 2em;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .Inlgnfrm{
     display: block;
-    margin: 15px auto;
-    width: 30%;
+    margin: 20px auto 10px auto;
+    width: 70%;
     height: 30px;
     outline: none;
-    border-radius: 20px;
-    border-color: maroon;
+    border-color: white;
+    border-bottom-color: maroon;
 }
+/*styling the image in the login text field*/
+#loginEmail{ 
+    background-image: url("../static/images/loginUN.JPG");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+
+}
+/*styling the image in the password text field*/
+#loginPass{ 
+    background-image: url("../static/images/loginPass.JPG");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 /*styling the submit button*/
 .InlgnfrmBtn{
-    width: fit-content;
+    width: 70%;
     height: 30px;
-    font-size: .5em;
-    border-radius: 5px;
+    font-size: .6em;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    background-color: #17f3e9;
+    
     
 }
 /*styling the create an account section*/
@@ -66,8 +127,9 @@ main{
     display: grid;
     text-align: center;
     padding: 15px;
-    margin-top: 15px;
+    margin-top: 50px;
     font-size: 20px;
+    background: #ff1541a3
 }
 /*styling the link*/
 .CreateAccount a{

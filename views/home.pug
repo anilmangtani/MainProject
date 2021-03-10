@@ -1,0 +1,77 @@
+extends base.pug
+block style
+    style
+        include ../static/base.css
+        include ../static/chatting.css
+        include ../static/home.css
+    body 
+        main
+            .slideshow-container
+                .mySlides.fade
+                    
+                    .SlideImage
+                        img(src="../static/images/HomePage/SliderOne.jpg", alt="", srcset="", width="100%") 
+                    .text 
+                        h1 Welcome to PlantWorld
+                        p We make the World Better and More Green Place    
+                .mySlides.fade
+                    
+                    .SlideImage
+                        img(src="../static/images/HomePage/SliderTwo.jpg", alt="", srcset="", width="100%") 
+                    .text 
+                        h1 Best Quality Plants
+                        p Life is short Buy the plants 
+                .mySlides.fade
+                    
+                    .SlideImage
+                        img(src="../static/images/HomePage/SliderThree.jpg", alt="", srcset="", width="100%") 
+                    .text 
+                        h1  Where flowers bloom, so does hope 
+                        p   Plants Plants Plants               
+                a.prev(onclick="plusSlides(-1)") &#10094
+                a.next(onclick="plusSlides(1)") &#10095 
+                       
+                //div(style='text-align: center;')
+                    div.dot(onclick="currentSlide(1)")
+                    div.dot(onclick="currentSlide(2)")
+                    div.dot(onclick="currentSlide(3)")// 
+
+            section.NewPrdctsHome
+                h1 New Products
+                .NewPrdctsHomeHeading
+                .NewPrdctsHome-Container 
+                    .NewPrdctsHome-Products
+                        a(href="").PrdctsHome1
+                            .prdctHomeImg
+                                img(src="../static/images/HomePage/Indoor.jpg", alt="", srcset="",width="100%", height="100%")
+                            .prdctHomeName
+                                h2 Indoor Plants
+                        a(href="").PrdctsHome2
+                            .prdctHomeImg
+                                img(src="../static/images/HomePage/Outdoor.jpg", alt="", srcset="",width="100%", height="100%")
+                            .prdctHomeName
+                                h2 Outdoor Plants
+                        a(href="").PrdctsHome3
+                            .prdctHomeImg
+                                img(src="../static/images/HomePage/Office.jpg", alt="", srcset="",width="100%", height="100%")
+                            .prdctHomeName
+                                h2 Office
+
+            section.HomeQtsOne-Container
+                .HomeQtsOne-heading
+                    h1 Quote of the day
+                .HomeQtsOne-items    
+                    .HomeQtsOne-quote
+                        q TO PLANT A GARDEN IS TO BELIEVE IN TOMORROW
+                        em -Anil Mangtani     
+                    .HomeQtsOne-image
+                        img(src="https://media0.giphy.com/media/8foZzYfwpvEJHcKoBp/200w.webp?cid=ecf05e478bdo0zrxvev0nel4f3x087f9iuco84c0efc7p1j3&rid=200w.webp",alt="", srcset="", height="100%", width="100%")
+                                  
+
+            script 
+                include ../static/homeslider.js
+        
+
+
+                
+

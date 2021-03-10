@@ -1,28 +1,35 @@
-extends base.pug 
+extends base.pug  
 block style 
     style 
-        include ../static/Navbar.css
+        include ../static/base.css
         include ../static/Signup.css
+        include ../static/chatting.css
 block script 
     script 
-        include ../static/hey.js
-block content 
-    main
+        include ../static/signup.js     
+block content
+    div.signupWrapper 
+        div.signUpbg 
+        div.signFormBg
         div.SUHeading
             h1 SignUp 
+            | *All Are Required fields 
         div.basicInfo
-            form(action="/signup", method="post", class="SUform") 
+            form(action="/signup", method="post", class="SUform", onsubmit="return val()") 
                 | Your Name 
-                input(type="text", name="Name", class="SUinput", placeholder="Enter Your Full Name Here")
+                input(type="text", name="Name", class="SUinput", id="fname",  placeholder="Enter Your Full Name Here")
                 | Your Email
-                input(type="email", name="Email", class="SUinput", placeholder="Enter Your Email Here")
+                input(type="email", name="Email", class="SUinput", id="email"  placeholder="Enter Your Email Here")
                 | Your Password 
-                input(type="password", name="Password", class="SUinput", placeholder="Enter Your Password Here")
+                input(type="password", name="Password", class="SUinput",id="pass" placeholder="Enter Your Password Here")
                 | Your Address 
-                input(type="text", name="Address", class="SUinput", placeholder="Enter Your Address Here ")
+                input(type="text", name="Address", class="SUinput",id="address" placeholder="Enter Your Address Here ")
                 | Your Phone No.
-                input(type="text", name="PhoneNo", class="SUinput", placeholder="Enter Your Phone No. Here")
+                input(type="text", name="PhoneNo", class="SUinput",id="phone" placeholder="Enter Your Phone No. Here")
                 input(type="submit", value="Submit", class="SUinputBtn")
-            
+
+block script  
+    script 
+        include ../static/navbar.js             
 
                

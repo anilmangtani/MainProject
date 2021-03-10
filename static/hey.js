@@ -1,3 +1,0 @@
-function messgae() {
-    alert("hello");
-}

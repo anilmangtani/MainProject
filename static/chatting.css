@@ -1,0 +1,105 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*styling the chat box*/
+.ChatBox{
+    position: absolute;
+    width: 490px;
+    height: 560px;
+    right: 30px;
+    z-index: 10;
+    bottom: 20px;
+}
+/*styling the chatting navigation bar in the chat box : Parent*/
+.chattingNavBar{
+    width: 100%;
+    height: 60px;
+    background-color: skyblue;
+    margin: 0;
+    z-index: 11;
+    display: none;
+}
+/*styling the chatting content of the navigation bar: the logo and buttons*/
+.chattingContent{
+    width: 100%;
+    height: 100%;
+    border : 1px solid black;
+    border-bottom: 4px solid black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+}
+/*styling the chatlogo*/
+.Chatlogo{
+    width: 40%;
+    overflow: hidden;
+}
+/*styling the h1 in the navigation bar*/
+.Chatlogo h1{
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+    font-size: 2em;
+    position: relative;
+    top: 10px;
+    border: 3px solid blue;
+
+}
+/*styling the links in the navigation bar in the ChatLinks*/
+.Chatlinks{
+    height: 100%;
+    width: 50%;
+}
+/*styling the logo of the links in the navigation bar*/
+.chatLinksLogo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*styling the links : a of the email and phone in the navigation bar */
+.chatLinksLogo a{
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 100px;
+    overflow: hidden;
+}
+/*styling the images in the links of the navigation bar*/
+.chatLinksLogo a img{
+    height: 100%;
+
+}
+/*styling the container of chatBox*/
+.chatBoxContainer{
+    height: 410px;
+    width: 100%;
+    border: 1px solid purple;
+    overflow: scroll;
+    display: none;
+    background-color: rgb(176, 199, 240);
+}
+/*styling the chatbox logo*/
+.ChatBoxLogo{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 100px;
+    z-index: 11;
+    overflow: hidden;
+    
+}
+.ChatBoxLogo img{
+    height: 100%;
+}
+
+.ChatDisplay{
+    display:block;
+}
