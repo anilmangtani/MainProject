@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+/*styling the heading container in the plants page*/
+.heading-gift-container{
+    width: 100%;
+    height: 120px;
+}
+/*styling the container of the plants page heading*/
+.gift-page-heading{
+    position: relative;
+    width: 100%;
+    font-family: serif;
+    margin: 5px auto;
+    text-align: center;
+}
+/*styling the heading in the container of the plant page*/
+.gift-page-heading h1{
+    width: fit-content;
+    margin: 0px auto;
+    border-bottom: 3px solid maroon;
+    font-size: 3.5em;
+    font-weight: 200;   
+}
+/*styling the plants page description in the plants page*/
+.gift-page-desc{
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    text-align: center;
+}
+.gift-page-desc p{
+    font-size: 1.5em;
+    margin: 0px;
+}
+/*styling the product parent heading in the page*/
+.pgitems-heading{
+    position: relative;
+    left: 3%;
+    border-bottom: 5px solid rgb(77, 36, 4);
+    width: fit-content;
+    color: rgb(8, 24, 243);
+}
+.pgitems-heading h2{
+    margin: 0px auto;
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+/*styling the products in the best selling plants*/
+.pgitems-products{
+    width: 90%;
+    height: fit-content;
+    margin: 55px auto 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+/*styling the same class in the items*/
+.sim-bs-itemspg{
+    width: 20%;
+    min-width: 150px;
+    height: 250px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+/*styling the hover effect to the page items*/
+.sim-bs-itemspg:hover{
+    box-shadow: 0px 0px 15px gray;   
+}
+/*styling the image container in the products*/
+.pgitem-prdct-image{
+    position: relative;
+    height: 65%;
+    border: 3px solid black;
+    width: 95%;
+    margin: 5px auto;
+}
+/*styling the item info container*/
+.pgitem-item-info-container {
+    position: relative;
+    display: flex;
+}
+/*styling the information of the item*/
+.pgitem-prdt-info{
+    display: grid;
+    border: 1px solid black;
+    height: 30%;
+    width: 49%;
+    line-height: 1.4em;
+}
+/*styling the heading and basic information in the contanier*/
+.pgitem-prdt-info h3{
+    margin: 0px auto;
+}
+.pgitem-prdt-info p{
+    margin: 0px auto;
+}
+/*styling the container of the links*/ 
+.pgitem-prdt-link{
+    position: relative;
+    left: 5%;
+    display: grid;
+    width: 40%;
+}
+/*styling the buttons in the link container */
+.pgitem-prdt-link input{
+    height: 35px;
+}
+/*styling the buybutton in the container*/
+.pgitem-prdt-link .BuyButtonC{
+    border-radius: 5px;
+    margin-bottom: 2px;
+    background-color:rgba(13, 218, 139, 0.993);
+    font-family: cursive;
+}
+/*styling the add to cart in the container*/
+.pgitem-prdt-link .CartButtonC{
+    border-radius: 5px;
+    background-color:rgba(241, 245, 8, 0.993);
+    font-family: cursive;
+}
+/*styling the links in the contanier*/
+.pgitems-products a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;    
+}
+
+
+
+
+
+
+
+/*STYLING THE WEBSITE FOR THE 1000PX*/
+@media all and (max-width:1000px){
+    /*styling the height of the box as fit content*/
+    .sim-bs-itemspg{
+        height: fit-content;
+    }
+    /*styling the flex direction products link*/
+    .pgitem-item-info-container{
+        flex-direction: column;
+    }
+    /*styling th width of the info as 100%*/
+    .pgitem-prdt-info{
+        width: 100%;
+    }
+    /*styling the button in the container*/
+    .pgitem-prdt-link{
+        width: 100%;
+        left: 0%;
+    }
+    .pgitem-prdt-link input{
+        width: 80%;
+        margin: 5px auto;
+    }
+}

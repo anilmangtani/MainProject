@@ -1,82 +1,173 @@
-/*styling the padding and margin 0*/
-@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 body{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-/*styling the header*/
-header{
-    position: fixed;
-    top: 0;
-    height: 150px;
-    width: 100%;
-    z-index: 10;
-    background-image: linear-gradient(180deg,#18cc18 5%, white 100%);
-    box-shadow: 0px 0px 5px gray; 
-    font-family: 'RocknRoll One', sans-serif;   
-
-}
-
-header>h1{
-    position: relative;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 3em;
-}
-/*styling the navigation bar*/
-nav{
-    position: fixed;
-    height: 50px;
-    width: 100%;
-    border-bottom: 1px solid gray;
-
-    top: 100px;
- 
-}
-/*styling the links*/
-nav ul{
-    display: flex;
-}
-nav ul li{
-    list-style: none;
-}
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    padding: 0px 15px;
-    font-size: 1.2em;
-}
-
-/*making the main 150px down*/
 main{
-    margin-top: 150px;
-    z-index: -1;
+    margin-top: 72px;
+    margin-bottom: 100px;
 }
-/*styling the infoSection Background image*/
-/*.infoSecOneBgImg{
-    height: 600px;
+/*styling the info container background*/
+.infoimg-parent-Container{
     width: 100%;
-    position: absolute;
-    background-image:  url("https://images.unsplash.com/photo-1438109382753-8368e7e1e7cf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FyZGVuaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    height: 55vh;
+    background:url("../static/images/information/Infobg.JPG");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    opacity: .8;
-    z-index: -1;  
-}*/
-/*styling the info Section */
-.infoSecOne{
-    height: 600px;
-    width: 100%;
-    color: black;
-    background: #93eb9a;   
+
+}
+/*styling the basic information heading in the container*/
+.info-heading{
+    width: fit-content;
+    margin: 0px auto;
+    text-align: center;
+}
+/*styling the heading in the information*/
+.info-heading h1{
+    font-size: 4em;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+/*styling the p in the information*/
+.info-heading p{
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0px;
 }
 
-/*styling the container class*/
-.container{
-    height: 550px;
-    position: relative;
-    top: 20px;
+
+
+/*styling the parent of the information content*/
+.information-content{
+    position: absolute;
+    width: 70%;
+    height: 40vh;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+/*styling the parenr of the items in the information*/
+.info-content-parent{
+    height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+/*styling the same class of the all the items in the information*/
+.same-content-class{
+    width: 25%;
+    height: 100%;
     border: 1px solid black;
+    background:linear-gradient(180deg, black, white);
+}
+/*styling the parent of image in the infomation*/
+.info-content-image{
+    height: 80%;
+    width: 90%;
+    margin: 3px auto;  
+}
+/*styling the heading parent in the information*/
+.info-content-words{
+    height: 15%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.info-content-words h1{
+    margin-top: 0px;
+    font-size: 1.2em;
+    color: black;
+}
+.info-content-parent a{
+    text-decoration: none;
+}
+.info-content-parent a:hover{
+    box-shadow: 0px 0px 15px gray;
+}
+
+
+/*styling the information video container*/
+.information-videos-container{
+    width: 100%;
+    height: 80vh;
+    margin-top: 30vh;
+}
+/*styling the video heading*/
+.info-video-heading{
+    position: relative;
+    width: 100%;
+    font-family: serif;
+    margin: 5px auto;
+    text-align: center;
+
+}
+.info-video-heading h1{
+    width: fit-content;
+    margin: 0px auto;
+    border-bottom: 3px solid maroon;
+    font-size: 3.5em;
+    font-weight: 200; 
+
+}
+/*styling the video parent in the video of the day*/
+.info-video-parent{
+    width: 100%;
+    height: 80%;
+    margin: 5px auto;
+}
+/*styling the video of the day box*/
+.info-videoOTD{
+    width: 70%;
+    height: 80%;
+    background-color: lightpink;
+    margin: 5px auto;
+}
+/*styling the title in the video of the day*/
+.info-video-title{
+    position: relative;
+    margin: 0px auto;
+    width: fit-content;
+}
+.info-video-title h1{
+    margin: 0px auto;
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+
+/*STYLING THE WEBSITE FOR THE 1000PX*/
+@media all and (max-width:1000px){
+    .information-content{
+        width: 80%;
+    }
+    .same-content-class{
+        width: 30%;
+    }
+    .info-content-image{
+        height: 70%;
+    }
+    .info-content-words{
+        height: 20%;
+    }
+}
+
+/*STYLE THE WEBSITE FOR THE 600PX*/
+@media all and (max-width:600px){
+    .information-content{
+        height: fit-content;
+    }
+    .info-content-parent{
+        flex-direction: column;        
+    }
+    .same-content-class{
+        width: 60%;
+        margin: 5px auto;
+    }
+    .information-videos-container{
+        margin-top: 80vh;
+    }
 }

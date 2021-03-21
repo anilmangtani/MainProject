@@ -1,0 +1,216 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.homeplants{
+    height: 80vh;
+    width: 80%;
+    margin: 10px auto;
+}
+
+/*styling the heading in the ProductsLike*/
+.homeplants-heading{
+    position: relative;
+    margin: 20px auto;
+    width: fit-content;
+    border-bottom: 3px solid maroon;
+    text-align: center
+}
+.homeplants-heading h1{
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+}
+/*styling the items in the plants sectionin the home page*/
+.homeplants-items{
+    height: 70vh;
+    width: 100%;
+}
+/*styling the homplants parent to flex*/
+.homeplants-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*styling the left side item in the homeplant*/
+.hp-item-left{
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+}
+/*styling the product*/
+.hp-item-heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+.hp-item-heading h1{
+    margin: 0px auto;
+    font-weight: 200;
+    color: black;
+}
+.hp-item-left a{
+    text-decoration: none;
+}
+/*styling the image in the left side*/
+.hp-item1-image{
+    position: relative;
+    top: 10%;
+    left: 25%;
+    height: 80%;
+    width: 70%;
+    border: 1px solid black;
+
+}
+/*styling the right side items*/
+.hp-item-right{
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/*styling the item1 in the left side*/
+.item1{
+    height: 100%;
+    width: 70%;
+    min-width: 300px;
+    background-color:pink;
+    float: right;
+    border-radius: 10px ;
+}
+/*styling the right side item*/
+.simitem{
+    width: 30%;
+    height: 45%;
+    background-color: cadetblue;
+}
+/*styling the right side heading*/
+.hp-rgt-prdct-hdng{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: cursive;   
+}
+.hp-rgt-prdct-hdng h1{
+    margin: 0px auto;
+    font-weight: 200;
+    color: black;
+}
+.hp-item-right a{ 
+    text-decoration:none;
+}
+
+/*styling the trnding products*/
+.TrndingPrdcts{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(165deg, white, rgb(24, 173, 231));
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.trndingPrdcts-heading{
+    position: relative;
+    margin: 20px auto;
+    width: fit-content;
+    border-bottom: 3px solid maroon;
+    text-align: center
+}
+.trndingPrdcts-heading h1{
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+}
+/*styling the Trending products in the home page*/
+.trndingPrdcts-items-container{
+    width: 80%;
+    margin: 10px auto;
+    height: 80%;
+}
+/*stlying the item box that will contain items*/
+.trndingPrdcts-items{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/*styling the bgimage*/
+.bs-item1{
+    background-image: url("../static/images/HomePage/Bouquet.JPG"); 
+}
+.bs-item2{
+    background-image: url("../static/images/HomePage/Planters.JPG");
+    background-size: contain;
+    background-position: center;
+}
+.bs-item3{
+    background-image: url("../static/images/HomePage/Tools.JPG");
+    background-size: cover;
+}
+.bs-item4{
+    background-image: url("../static/images/HomePage/Fertilizers.JPG");
+}
+.bs-item5{
+    background-image: url("../static/images/HomePage/pebbels.JPG");
+}
+/*stliyng the the same class in the trnding items*/
+.bs-sim-item{
+    width: 30%;
+    height: 40%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+}
+.bs-item-heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: cursive;
+
+}
+.bs-item-heading h1{
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+/*styling the a in the Trending items*/
+.trndingPrdcts-items-container a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 0px 0px 15px gray;
+}
+
+/*for width 1000px*/
+
+@media all and (max-width:1000px){
+    .homeplants{
+        margin-bottom: 20px;
+        overflow: hidden;
+        height: fit-content;
+    }
+    .homeplants-items{
+        height: 120vh;
+        width: 100%;
+        border: 1px solid black;
+        overflow: visible;
+    }
+    .homeplants-items{
+        
+        flex-direction: column;
+    }
+    .hp-item-left{
+        margin: 5px auto;
+        overflow: visible;
+        width: fit-content;
+        border: 1px solid black;
+    }
+    .hp-item-right{
+        margin: 5px auto;
+        overflow:visible;
+        width: 80%;
+    }
+    .bs-item-heading h1{
+        font-size: 1em ;
+    }
+}

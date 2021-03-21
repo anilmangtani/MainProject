@@ -22,7 +22,6 @@ img{
     width: 100%;
     position: relative;
     margin: auto;
-    border: 1px solid black;
     height: 70vh;
 }
 /*Styling the Slide Image Container*/
@@ -195,6 +194,7 @@ img{
     margin-top: 150px;
     width: 100%;
     height: 30vh;
+    background-image: linear-gradient(60deg,white, rgb(248, 71, 100));
   
 }
 /*styling the heading container in the home page*/
@@ -221,9 +221,7 @@ img{
     width: 100%;
     height: 70%;
     display: flex;
-    margin-top: 10px;
-    background-color: rgb(52, 218, 240);
-    border-radius: 40px;
+    border-radius: 10px;
 }
 /*styling the quote parent in the quote section*/
 .HomeQtsOne-quote{
@@ -248,12 +246,266 @@ img{
     position: relative;
     left: 50px;
     top: 20px;
-    border-radius: 100px;
+    border-radius: 5px;
     overflow: hidden;
     height: 70%;
     width: 10%;
 }
+/*styling the home seasonal plants in the home page*/
+.HomeSesnolPlnts{
+    width: 100%;
+    height: 50vh;
+    margin-top: 30px;
+    overflow: hidden;
+}
+/*stying the heading parent in the seasonal plants*/
+.SesnolPlnts-Heading{
+    position: relative;
+    width: 20%;
+    height: fit-content;    
+    margin: 0px auto;
+    text-align: center;
+    overflow: hidden;
+    display: inline;
+}
+.SesnolPlnts-Heading h1{
+    width: fit-content; 
+    font-size: 2em;
+    margin: 0px auto 0px auto;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    border-bottom: 3px solid maroon;
+}
+/*styling the parent of the items in the seasonal plants*/
+.SesnolPlnts-items{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+    padding-top: 10px;
+}
+/*styling the links or items in the seasonal plants section*/
+.SesnolPlnts-items a{
+    width: 15%;
+    height: 100%;
+    border: 1px solid gray;
+}
+/*adding 3d effect when mouse hover*/
+.SesnolPlnts-items a:hover{
+    box-shadow: 0px 0px 20px gray;
+    transition: .5s;
+}
+/*styling the images in the seasonal section in the home page*/
+.sesnolitem-image{
+    width: 80%;
+    height: 60%;
+    margin: 0px auto;
+    margin-top: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/*styling the plant name in the seasonal section*/
+.sesnolitem-name{
+    text-align: center;
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+/*styling the plant heading h1 in the seasonal section*/
+.sesnolitem-name h1{
+    margin: 0px auto;
+    color: black;
+    font-size: 1em;
+    font-family:cursive;
+}
+/*removing the underline of the plants name*/
+.SesnolPlnts-items a{
+    text-decoration: none;
+}
+/*styling the price in the seasonal plants*/
+.sesnolitem-price{
+    text-align: center;
+    color: black;
+}
+.sesnolitem-price h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+}
 
+/*styling the More.. section in the seasonal section*/
+.sesnolPlnts-extra{
+    text-align: center;
+    color: black;
+    background:linear-gradient(170deg, rgb(12, 206, 206), white)
+}
+.sesnolPlnts-extra h1{
+    position: relative;
+    top: 25%;
+    font-weight: 400;
+}
+/*styling the Information part in the web page*/
+.InfoHome{
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+    background : linear-gradient(180deg, white, yellow);
+    margin: 20px auto;
+}
+/*styling the container in the information part*/
+.InfoHome-Container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*styling the heading in the information part in the home page*/
+.InfoHome-Heading{
+    position: relative;
+    margin: 0px auto;
+    width: fit-content;
+    border-bottom: 3px solid maroon;
+    text-align: center
+}
+/*styling the h1 in the heading of the information part*/
+.InfoHome-Heading h1{
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+}
+/*styling the infohome Box that will contain the information*/
+.InfoHome-Box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+/*styling the information items in the home page*/
+.InfoHome-items{
+    position: relative;
+    top: 5%;
+    width: 30%;
+    height: 90%;
+    border: 1px solid black;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/*styling the items in the information part*/
+.InfoHome-item1{
+    background-image: url("../static/images/HomePage/InfoTCP.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*styling the items in the information part*/
+.InfoHome-item2{
+    background-image: url("../static/images/HomePage/InfoGFS.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*stlying the a in the information part*/
+.InfoHome-Box a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 15px black;
+    font-size: 1;
+    font-family: cursive;
+}      
+/*styling the link in the information part*/
+.InfoLink{
+    height: 10%;
+    width: fit-content;
+    background-color: rgba(1, 23, 24, 0.404);
+    margin: 0px auto;
+}
+.InfoLink p{
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+/*styling the OurMission in the home page*/
+.OurMission{
+    width: 100%;
+    height: 80vh;
+    margin-top: 20px;
+    background-image: url("../static/images/HomePage/OurMission.JPG");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*styling the container in the Our Mission*/
+.OurMis-Container{
+    position: relative;
+    left: 15%;
+    top: 10%;
+    width: 25%;
+    height: fit-content;
+    min-height: 50vh;
+    max-height: 65vh;
+    background-color: rgba(223, 81, 81, 0.479);
+    border: 10px double black;
+    overflow: hidden;
+}
+/*styling the heading in the Mission*/
+.Mis-heading{
+    text-align: center;
+    height: 10%;
+}
+.Mis-heading h1{
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 0px
+}
+/*styling the paragraph in the Mission*/
+.Mis-info{
+    height: 70%;
+    text-align: center;
+}
+.Mis-info p{
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+
+
+/*styling the device in the width of 1000 px*/
+@media only screen and (max-width: 1000px){
+    .sesnolitem-price h2{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .sesnolitem-price p{
+        margin-top: 0;
+    }
+    /*styling the heading in the our Mission*/
+    .Mis-heading h1{
+        font-size: 25px;
+    }
+    /*styling the OutMission Container*/
+    .OurMis-Container{
+        width: 30%;
+    }
+    /*styling the para in the our mission*/
+    .Mis-info p{
+        font-size: 1em;
+    }
+    .InfoHome-Box{
+        height: 65%;
+    }
+    /*styling the font in the information*/
+    .InfoHome-Box a{
+        font-size: .75em;
+    }
+    /*.InfoHome-items{
+        height: 90%;
+    }*/
+    
+}
 
 
 /*Styling in the device that will hav max width of 800px: Tablets*/
@@ -305,8 +557,44 @@ img{
     .HomeQtsOne-image{
         left: 0px;
     }
+
+    /*styling the seasonal section in the home page*/
+    .HomeSesnolPlnts{
+        height: fit-content;
+    }
+
+    /*styling the parent of the items in the seasonal plants*/
+    .SesnolPlnts-items{
+        height:fit-content;
+        display:flex;
+        flex-wrap: wrap;
+        padding-top:10px ;
+    }
+    .SesnolPlnts-items a{
+        width: 100px;
+        height: 160px;
+    }
+    /*styling the plant heading h1 in the seasonal section*/
+    .sesnolitem-name h1{
+    font-size: 1em;
+    }
+    /*styling the more part in the seasonal part*/
+    .sesnolPlnts-extra{
+        font-size: .75em;
+    }
+    /*styling the ourMission Container*/
+    .OurMis-Container{
+        width: 250px;
+    }
+
+    /*styling the heading in the our Mission*/
+    .Mis-heading h1{
+        font-size: 20px;
+    }
     
   }
+
+
 
   @media only screen and (max-width: 400px) {
     .text{
@@ -331,6 +619,30 @@ img{
     .prev,.next{
         top: 70px;
     }
+    /*styling the infohome Box that will contain the information*/
+    .InfoHome-Box{
+        height: 60%;
+    }
+
+    /*stlying the a in the information part*/
+    .InfoHome-Box a{
+        font-size: .60em;    
+    }
+    /*styling the info link in the information*/
+    .InfoLink p{
+        font-size: 1em;
+    }
+    /*styling our mission in the home page*/
+    .OurMis-Container{
+        top: 5px;
+        width: 60%;
+
+    }
+    /*styling the information in the our mission*/
+    .Mis-info p {
+        font-size: 1em;
+    }    
+
     
     
     

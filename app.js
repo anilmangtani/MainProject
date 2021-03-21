@@ -6,6 +6,7 @@ const fs = require('fs');
 const mangoose = require('mongoose');
 
 
+
 //creating a database in mangoose
 mangoose.connect('mongodb://localhost/OnlineNursery', {useNewUrlParser: true, useUnifiedTopology: true});
 
@@ -41,7 +42,7 @@ app.set('views', path.join(__dirname, 'views')) //set the views directory
 //Endpoints
 app.get('/', (req, res)=>{
     const params = {};
-    res.status(200).render('Home.pug', params)
+    res.status(200).render('base.pug', params)
 })
 //endpoint for the home page
 app.get('/home',(req, res)=>{
@@ -80,10 +81,50 @@ app.post('/signup',(req, res)=>{
 
 //getting the endpoints of the chatting page
 app.get('/chatting', (req, res)=>{
-    var params = {};
+    const params = {};
     res.render('chatting.pug', params);
 });
 
+//getting the endpoint of the plants page
+app.get('/plants',(req, res)=>{
+    var params = {};
+    res.render('plants.pug',params);
+});
+//getting the endpoint of the vegetable points
+app.get('/vegetable',(req,res)=>{
+    const params ={};
+    res.render('vegetable.pug',params);
+});
+//getting the endpoint of the fruits
+app.get('/fruit', (req,res)=>{
+    const params = {};
+    res.render('fruits.pug', params);
+});
+//getting the endpoint of the gift items 
+app.get('/gift',(req,res)=>{
+    const params={};
+    res.render('gift.pug',params);
+});
+//getting the endpoint of the planter items
+app.get('/planter',(req,res)=>{
+    const params={};
+    res.render('planter.pug');
+});
+//getting the endpoint of the care items
+app.get('/careAndDecor',(req,res)=>{
+    const params={};
+    res.render('care.pug');
+});
+//getting end points of the information item
+app.get('/information',(req,res)=>{
+    const params ={};
+    res.render('howto.pug',params);
+});
+//getting end point of the take care of plants page
+app.get('/HowToTakeCareOfPlant',(req,res)=>{
+    const params ={};
+    res.render('takecareplant.pug',params);  
+});
 //server
 app.listen(port, ()=>{
     console.log(`this is working on the port no ${port}`)

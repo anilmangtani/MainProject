@@ -50,7 +50,7 @@ body{
 }
 /*styling the main section*/
 main{
-    margin-top: 120px;
+    margin-top: 70px;
 }
 .navmenu{
     width: fit-content;
@@ -67,8 +67,127 @@ main{
     padding: 2px;
 }
 
+
+
+/*styling the main section*/
+main{
+    margin-top: 120px;
+    
+}
+/*styling the footer of the pages*/
+.footerBase{
+    width: 100%;
+    height: fit-content;
+    margin-top:auto;
+}
+/*styling the footer in the container*/
+.footercontainer{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+/*styling the contents in the footer*/
+.footercontainer .footeritems{
+    position: relative;
+    top: 10%;
+    width: 20%;
+    height: fit-content;    
+
+}
+/*styling the h1 in the footer*/
+.footeritems h1{
+    font-family: serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 0px;
+    text-align:center;
+}
+/*styling the p in the footers*/
+.footeritems p{
+    position: relative;
+    left: 5%;
+    font-family: cursive;
+    font-size: 1em;
+    font-weight: 300;
+
+}
+/*styling the subscrpition in the footer*/
+.subsForm{
+    position: relative;
+    left: 5%;
+    display: grid;
+    width: 70%;
+}
+.subsForm .EmailSubs{
+    border: 2px solid red;
+    margin: 10% 0px;
+    width: 100%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+/*styling the button in the subscription in the footer*/
+.subsForm .btnSubs{
+    width: 50%;
+    height: 30px;
+    background-color: red;
+    border-radius: 20px;
+    font-family: cursive;
+    margin: 0px auto;
+}
+
+/*styling the social media icons in the follow us in footer*/
+.social-media-links{
+    height: 150px;
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+}
+/*setting the icon*/
+.iconsSetting{
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 50%;
+}
+/*setting the Basic info*/
+.Basic-Container{
+    display: grid;
+    line-height: 1.5rem;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+
+}
+/*setting the basic help container*/
+
+.footeritems a{
+    width: fit-content;
+    margin: 0px auto;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footeritems a:hover{
+    border-bottom: 1px solid wheat;    
+}
+
+
+
+
+
+
+
 /*adding media query for navigation logo*/
-@media all and (max-width : 888px){
+@media all and (max-width : 1000px){
     .basenavbar{
         overflow: visible;
     }
@@ -100,9 +219,32 @@ main{
     .active{
         display:block;
     }
+    .footerBase{
+        height: fit-content;
+    }
+    .footercontainer{
+        flex-direction: column;
+        
+    }
+    .footercontainer .footeritems{
+        border: 1px solid white;
+        margin: 10px auto;
+        padding: 10px;
+        width: 80%;
+        
+    }
+
 }
 
-/*styling the main section*/
-main{
-    margin-top: 120px;
+/*styling for 800px*/
+
+/*styling the website for 600px*/
+@media all and (max-width : 600px){
+    .footeritems h1{
+        font-size: 1em;
+    }
+    .footeritems p{
+        font-size: .75em;
+        font-family: cursive;
+    }
 }

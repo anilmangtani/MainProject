@@ -15,13 +15,15 @@ html(lang="en")
         nav.basenavbar 
             .NBWrapper 
                 ul.navlist#mytopnav
-                    li #[a.active(href="") Home]
-                    li #[a(href="") Plants]
-                    li #[a(href="") Seeds]
-                    li #[a(href="") Fruits]
-                    li #[a(href="") Veges]
-                    li #[a(href="") Shop]
-                    li #[a(href="") Other Stuff]
+                    li #[a.active(href="/home") Home]
+                    li #[a(href="/plants") Plants]
+                    li #[a(href="/fruit") Fruits]
+                    li #[a(href="/vegetable") Vegetables]
+                    li #[a(href="/gift") Gift Item]
+                    li #[a(href="/Planter") Planters]
+                    li #[a(href="/careAndDecor") Care&Decor]
+                    li #[a(href="/information") Information]
+                    li #[a(href="") Blogs]
                     li #[a(href="/login") Log In]
                     li #[a(href="/signup") My Account]
                 .navmenu#navbutton 
@@ -47,7 +49,51 @@ html(lang="en")
                 .ChatDisplay         
         block content  
         
-        block footer
+        footer.footerBase
+            .footercontainer
+                .ournote.footeritems
+                    h1 ThankYou! 
+                    p For for promoting greenry and plantation
+                    form(action="/home", method="post", class="subsForm", id="subsFormId")
+                        input(type="email", name="SubEmail", placeholder="Enter your Email",class="EmailSubs")
+                        input(type="submit", value="SUBSCRIBE", class="btnSubs")
+                .account-links.footeritems
+                    h1 Follow Us
+                        .social-media-links
+                            .iconsSetting
+                                .facebook-icon
+                            .iconsSetting
+                                .insta-icon
+                            .iconsSetting
+                                .snap-icon
+                            .iconsSetting
+                                .twitter-icon
+                            .iconsSetting
+                                .email-icon
+                            .iconsSetting
+                                .pint-icon 
+                .Basic-info.footeritems
+                    h1 Basic-info
+                    .Basic-Container
+                        a(href="#") Our policy
+                        a(href="#") Shipping Policy
+                        a(href="#") Refund Policy
+                        a(href="#") Security Issues
+                        a(href="#") Terms and Condition
+                .Basic-Help.footeritems
+                    h1 Help
+                    .Basic-Container
+                        a(href="#") Payment
+                        a(href="#") Shipping
+                        a(href="#") Products
+                        a(href="tel:+") Call Us
+                        a(href="mailto:") Mail us                       
+                .Our-Address.footeritems
+                    h1 Address
+                    .Basic-Container
+                        | Green World, gopalpura TonkRoad Jaipur 302018
+                    .Copyright
+                        | &#169; Anil Mangtani 
         block script  
             script 
                 include ../static/navbar.js     

@@ -1,0 +1,203 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+/*styling the heading container in the plants page*/
+.plants-heading-container{
+    width: 100%;
+    height: 120px;
+}
+/*styling the container of the plants page heading*/
+.plants-page-heading{
+    position: relative;
+    width: 100%;
+    font-family: serif;
+    margin: 5px auto;
+    text-align: center;
+}
+/*styling the heading in the container of the plant page*/
+.plants-page-heading h1{
+    width: fit-content;
+    margin: 0px auto;
+    border-bottom: 3px solid maroon;
+    font-size: 3.5em;
+    font-weight: 200;   
+}
+/*styling the plants page description in the plants page*/
+.plants-page-desc{
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    text-align: center;
+}
+.plants-page-desc p{
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+/*styling the same container in the plants page*/
+.bS-PlantsPage-Container{
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    height: fit-content;
+    min-height: 50vh;
+    background : linear-gradient(180deg, skyblue, white);
+}
+.bs-plantpg-heading{
+    position: relative;
+    left: 3%;
+    border-bottom: 5px solid rgb(77, 36, 4);
+    width: fit-content;
+    color: rgb(8, 24, 243);
+}
+.bs-plantpg-heading h2{
+    margin: 0px auto;
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+/*styling the products in the best selling plants*/
+.bs-plantspg-products{
+    width: 90%;
+    height: fit-content;
+    margin: 55px auto 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+/*styling the same class in the best selling plants*/
+.sim-bs-plntspg{
+    width: 20%;
+    min-width: 150px;
+    height: 250px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+/*styling the a in the best selling products*/
+.bs-plantspg-products a{
+    color: black;
+    text-decoration: none;
+}
+.sim-bs-plntspg:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+/*styling the heading in the best selling box*/
+.sim-bs-plntspg h3{
+    position: relative;
+    top: 65%;
+    margin: 0px auto 0px auto;
+    text-align:center;
+    font-size: 1.5em;
+    color: red;
+    text-shadow: 0px 0px 5px black;
+}
+
+.bs-plantspg-prdct1{
+    background-image: url("../static/images/Plants/Alovera.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bs-plantspg-prdct2{
+    background-image: url("../static/images/Plants/PinkRose.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bs-plantspg-prdct3{
+    background-image: url("../static/images/Plants/Luckybamboo.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bs-plantspg-prdct4{
+    background-image: url("../static/images/Plants/Sansevieria.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*styling the seasonal product in the plants page*/
+.seasonal-plantsPage-Container{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid violet;
+    background-image: url("../static/images/Plants/snslBG.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*styling the heading the sesonal plants */
+.snl-plntspg-heading{
+    position: relative;
+    left: 3%;
+    border-bottom: 5px solid rgb(77, 36, 4);
+    width: fit-content;
+    color: rgb(243, 114, 8);
+}
+.snl-plntspg-heading h2{
+    margin: 0px auto;
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+/*styling the seasonal products in the plants page*/
+.snl-plants-products{
+    width: 90%;
+    height: fit-content;
+    margin: 55px auto 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+/*styling the links in the seasonal*/
+.snl-plants-products a{
+    color: black;
+    text-decoration: none;
+}  
+
+/*styling the More Plants in the plants section*/
+.MorePlants-plntspg-contanier{
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    height: 100vh;
+    min-height: 50vh;
+    background : linear-gradient(180deg, skyblue, white);
+}
+/*styling the heading in the more planrs */
+.Moreplants-plntsgn-heading{
+    position: relative;
+    left: 3%;
+    border-bottom: 5px solid rgb(77, 36, 4);
+    width: fit-content;
+    color: rgb(243, 8, 212);
+}
+.Moreplants-plntsgn-heading h2{
+    margin: 0px auto;
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.Mp-plntspg-prdcts{
+    width: 90%;
+    height: fit-content;
+    margin: 55px auto 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.Mp-plntspg-prdcts a{
+    text-decoration: none;
+}

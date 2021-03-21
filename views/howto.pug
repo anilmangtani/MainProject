@@ -1,0 +1,40 @@
+extends base.pug
+block style
+    style
+        include ../static/base.css
+        include ../static/howto.css
+    body
+        main
+            section.infoimg-parent-Container
+                .info-heading
+                    h1 Important Information
+                    p Basic information you need to know
+
+            section.information-content
+                .info-content-parent
+                    a(href="/HowToTakeCareOfPlant").info-content1.same-content-class
+                        .info-content-image
+                            img(src="../static/images/information/FromSeeds.jpg", alt="", srcset="", height="100%", width="100%")
+                        .info-content-words
+                            h1 How to Grow plants from Seeds   
+                    a(href="http://").info-content1.same-content-class
+                        .info-content-image
+                            img(src="../static/images/information/BegGuide.jpg", alt="", srcset="", height="100%", width="100%")
+                        .info-content-words
+                            h1 Beginner's Guide                
+                    a(href="http://").info-content1.same-content-class
+                        .info-content-image
+                            img(src="../static/images/information/TakeCarePlants.jpg", alt="", srcset="", height="100%", width="100%")
+                        .info-content-words
+                            h1 How to Take care of plants         
+
+            //-Video of the day container
+            section.information-videos-container
+                .info-video-heading
+                    h1 Video of the Day
+                .info-video-parent
+                    .info-videoOTD
+                        iframe(width='100%' height='100%' src='https://www.youtube.com/embed/GOGPsIYXbr4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                    .info-video-title
+                        h1 Low Light Indoor Plants
+

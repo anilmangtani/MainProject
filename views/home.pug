@@ -4,6 +4,7 @@ block style
         include ../static/base.css
         include ../static/chatting.css
         include ../static/home.css
+        include ../static/homeTwo.css
     body 
         main
             .slideshow-container
@@ -34,7 +35,7 @@ block style
                 //div(style='text-align: center;')
                     div.dot(onclick="currentSlide(1)")
                     div.dot(onclick="currentSlide(2)")
-                    div.dot(onclick="currentSlide(3)")// 
+                    div.dot(onclick="currentSlide(3)")
 
             section.NewPrdctsHome
                 h1 New Products
@@ -65,8 +66,153 @@ block style
                         q TO PLANT A GARDEN IS TO BELIEVE IN TOMORROW
                         em -Anil Mangtani     
                     .HomeQtsOne-image
-                        img(src="https://media0.giphy.com/media/8foZzYfwpvEJHcKoBp/200w.webp?cid=ecf05e478bdo0zrxvev0nel4f3x087f9iuco84c0efc7p1j3&rid=200w.webp",alt="", srcset="", height="100%", width="100%")
-                                  
+                        img(src="https://media1.giphy.com/media/4QFBn7Or4Qw43x6qVs/giphy.webp?cid=ecf05e4790lb97xwr2yxe9uxq9sk3g8iloxrr767cqi729l0&rid=giphy.webp",alt="", srcset="", height="100%", width="100%")
+
+            section.HomeSesnolPlnts
+                .SesnolPlnts-Heading
+                    h1 Seasonal Plants & Vegies (Seeds) 
+                .SesnolPlnts-items
+                    a(href="").sesnolPlnts-item1
+                        .sesnolitem-image
+                            img(src="../static/images/fruits/RawMango.jpg", alt="", srcset="",height="100%", width="100%")
+                        .sesnolitem-name
+                            h1 Raw Mango
+                        .sesnolitem-price
+                            h2 50/-
+                            p Buy Now
+                        
+                    a(href="").sesnolPlnts-item2
+                        .sesnolitem-image
+                            img(src="../static/images/fruits/Watermelon.jpg", alt="", srcset="",height="100%", width="100%")
+                        .sesnolitem-name
+                            h1 Watermelon
+                        .sesnolitem-price
+                            h2 50/-
+                            p Buy Now
+                            
+                        
+                    a(href="").sesnolPlnts-item3
+                        .sesnolitem-image
+                            img(src="../static/images/fruits/Grapes.jpg", alt="", srcset="",height="100%", width="100%")
+                        .sesnolitem-name
+                            h1 Grape
+                        .sesnolitem-price
+                            h2 35/-
+                            p Buy Now
+                        
+                    a(href="").sesnolPlnts-item4
+                        .sesnolitem-image
+                            img(src="../static/images/Vegetables/ladyfinger.jpg", alt="", srcset="",height="100%", width="100%")
+                        .sesnolitem-name
+                            h1 Lady Finger
+                        .sesnolitem-price
+                            h2 35/-
+                            p Buy Now
+                        
+                    a(href="").sesnolPlnts-item5
+                        .sesnolitem-image
+                            img(src="../static/images/Vegetables/cucumber.jpg", alt="", srcset="",height="100%", width="100%")
+                        .sesnolitem-name
+                            h1 Cucumber
+                        .sesnolitem-price
+                            h2 40/-
+                            p Buy Now
+
+                    a(href="").sesnolPlnts-extra  
+                        h1 More..                
+
+            
+            //homeTwoCSS
+
+            section.homeplants
+                .homeplants-heading 
+                    h1 Products You will Love 
+                .homeplants-items
+                    .hp-item-left
+                        a(href="http://").item1
+                            .hp-item-heading
+                                h1 Special for you
+                            .hp-item1-image
+                                img(src="", alt="", srcset="", height="100%", width="100%")   
+                    .hp-item-right
+                        a(href="http://").item2.simitem
+                            .hp-rgt-prdct-hdng
+                                h1 Products
+                        a(href="http://").item3.simitem
+                            .hp-rgt-prdct-hdng
+                                h1 Products   
+                        a(href="http://").item4.simitem
+                            .hp-rgt-prdct-hdng
+                                h1 Products
+                        a(href="http://").item5.simitem
+                            .hp-rgt-prdct-hdng
+                                h1 Products
+                        a(href="http://").item6.simitem
+                            .hp-rgt-prdct-hdng
+                                h1 Products
+                        a(href="http://").item7.simitem
+                            .hp-rgt-prdct-hdng
+                                h1 Products
+
+            section.TrndingPrdcts 
+                .trndingPrdcts-heading
+                    h1 Best Seller
+                .trndingPrdcts-items-container
+                    .trndingPrdcts-items
+                        a(href="http://").bs-item1.bs-sim-item
+                            .bs-item-heading
+                                h1 Bouquet
+
+                        a(href="http://").bs-item2.bs-sim-item
+                            .bs-item-heading
+                                h1 Planters
+                                
+                        a(href="http://").bs-item3.bs-sim-item
+                            .bs-item-heading
+                                h1 Tools
+                            
+                        a(href="http://").bs-item4.bs-sim-item
+                            .bs-item-heading
+                                h1 Fertilizers
+                                
+                        a(href="http://").bs-item5.bs-sim-item
+                            .bs-item-heading
+                                h1 Pebbles        
+
+
+
+            
+            
+            //homecss
+            section.InfoHome
+                .InfoHome-Container
+                    .InfoHome-Heading
+                        h1 Something You Need To Know
+                    .InfoHome-Box
+                        a(href="").InfoHome-items.InfoHome-item1
+                            h2 How to take care of plants
+                            h2 To know click here
+                        a(href="http://").InfoHome-items.InfoHome-item2
+                            h2 How to Grow plants from seeds
+                            h2 To know click here    
+                    .InfoLink
+                        p For More Information#[a(href="") Click here]       
+
+            
+            section.OurMission
+                .OurMis-Container
+                    .Mis-heading
+                        h1 Our Mission
+                    .Mis-info 
+                        p "In today’s world everyone is unaware about the importance of green world. Rather than promoting the plantation they are busy in promoting corporate world. So, by our project we are supporting plantation and make the world better place.
+                        p We provide good quality products at affordable price. So, everyone can promote plantation by growing plants." 
+            
+            
+
+                        
+
+                        
+
 
             script 
                 include ../static/homeslider.js
