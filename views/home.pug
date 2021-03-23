@@ -1,4 +1,6 @@
 extends base.pug
+block title 
+    title Home Page | Plant World
 block style
     style
         include ../static/base.css
@@ -189,10 +191,10 @@ block style
                     .InfoHome-Heading
                         h1 Something You Need To Know
                     .InfoHome-Box
-                        a(href="").InfoHome-items.InfoHome-item1
+                        a(href="/HowToTakeCareOfPlant").InfoHome-items.InfoHome-item1
                             h2 How to take care of plants
                             h2 To know click here
-                        a(href="http://").InfoHome-items.InfoHome-item2
+                        a(href="/HowToGrowPlantsFromSeeds").InfoHome-items.InfoHome-item2
                             h2 How to Grow plants from seeds
                             h2 To know click here    
                     .InfoLink

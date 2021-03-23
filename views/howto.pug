@@ -1,4 +1,6 @@
 extends base.pug
+block title
+    title Basic Information
 block style
     style
         include ../static/base.css
@@ -16,17 +18,17 @@ block style
                         .info-content-image
                             img(src="../static/images/information/FromSeeds.jpg", alt="", srcset="", height="100%", width="100%")
                         .info-content-words
-                            h1 How to Grow plants from Seeds   
-                    a(href="http://").info-content1.same-content-class
+                            h1 How to take care of plant   
+                    a(href="/BeginnerGuide").info-content1.same-content-class
                         .info-content-image
                             img(src="../static/images/information/BegGuide.jpg", alt="", srcset="", height="100%", width="100%")
                         .info-content-words
                             h1 Beginner's Guide                
-                    a(href="http://").info-content1.same-content-class
+                    a(href="/HowToGrowPlantsFromSeeds").info-content1.same-content-class
                         .info-content-image
                             img(src="../static/images/information/TakeCarePlants.jpg", alt="", srcset="", height="100%", width="100%")
                         .info-content-words
-                            h1 How to Take care of plants         
+                            h1 How to Grow plants from Seeds         
 
             //-Video of the day container
             section.information-videos-container

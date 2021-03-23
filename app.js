@@ -125,6 +125,16 @@ app.get('/HowToTakeCareOfPlant',(req,res)=>{
     const params ={};
     res.render('takecareplant.pug',params);  
 });
+//getting end point of the beginer guide of the plant page
+app.get('/BeginnerGuide',(req,res)=>{
+    const params ={};
+    res.render('BeginnerGuide.pug',params);  
+});
+//Getting end point of thw how to grow plants from seeds page
+app.get('/HowToGrowPlantsFromSeeds',(req,res)=>{
+    const params ={};
+    res.render('GrowFromSeeds.pug',params);  
+});
 //server
 app.listen(port, ()=>{
     console.log(`this is working on the port no ${port}`)
