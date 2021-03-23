@@ -58,8 +58,8 @@ app.post('/login', (req, res)=>{
     var LoInfo = new LgInformation(req.body)
     LoInfo.save().then(()=>{
        // res.render('base.pug');
-    }).catch(()=>{
-        res.send("some error has occured sorry");
+    }).catch((error)=>{
+        res.send("Some Error has occured! Sorry");
     }) 
 })
 //getting the sign up information
@@ -111,7 +111,7 @@ app.get('/planter',(req,res)=>{
     res.render('planter.pug');
 });
 //getting the endpoint of the care items
-app.get('/careAndDecor',(req,res)=>{
+app.get('/care-and-decor',(req,res)=>{
     const params={};
     res.render('care.pug');
 });
@@ -121,17 +121,17 @@ app.get('/information',(req,res)=>{
     res.render('howto.pug',params);
 });
 //getting end point of the take care of plants page
-app.get('/HowToTakeCareOfPlant',(req,res)=>{
+app.get('/how-to-take-care-of-plants',(req,res)=>{
     const params ={};
-    res.render('takecareplant.pug',params);  
+    res.render('takeCarePlant.pug',params);  
 });
 //getting end point of the beginer guide of the plant page
-app.get('/BeginnerGuide',(req,res)=>{
+app.get('/beginner-guide',(req,res)=>{
     const params ={};
-    res.render('BeginnerGuide.pug',params);  
+    res.render('beginnerGuide.pug',params);  
 });
 //Getting end point of thw how to grow plants from seeds page
-app.get('/HowToGrowPlantsFromSeeds',(req,res)=>{
+app.get('/how-to-grow-plants-from-seeds',(req,res)=>{
     const params ={};
     res.render('GrowFromSeeds.pug',params);  
 });
