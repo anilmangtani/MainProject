@@ -3,12 +3,13 @@ block title
     title SignUp Page | Plant World
 block style 
     style 
-        include ../static/base.css
-        include ../static/Signup.css
-        include ../static/chatting.css
+        include ../public/css/base.css
+        include ../public/css/Signup.css
+        include ../public/css/chatting.css
 block script 
     script 
-        include ../static/signup.js     
+        include ../public/js/signup.js
+        include ../public/js/navbar.js     
 block content
     div.signupWrapper 
         div.signUpbg 
@@ -29,9 +30,6 @@ block content
                 | Your Phone No.
                 input(type="text", name="PhoneNo", class="SUinput",id="phone" placeholder="Enter Your Phone No. Here")
                 input(type="submit", value="Submit", class="SUinputBtn")
-
-block script  
-    script 
-        include ../static/navbar.js             
+             
 
                

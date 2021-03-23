@@ -31,7 +31,7 @@ const LgInformation = mangoose.model('LoginInfo', LoginSchema);
 
 
 //Express related stuff
-app.use('/static', express.static('static'));
+app.use('/static', express.static('public/static'));
 app.use(express.urlencoded());
 
 //pug related stuff
@@ -57,7 +57,8 @@ app.get('/login', (req, res)=>{
 app.post('/login', (req, res)=>{
     var LoInfo = new LgInformation(req.body)
     LoInfo.save().then(()=>{
-       // res.render('base.pug');
+       res.send("Login Done!!"); 
+       //res.render('home.pug');
     }).catch((error)=>{
         res.send("Some Error has occured! Sorry");
     }) 
@@ -73,7 +74,7 @@ app.post('/signup',(req, res)=>{
     const params = {}
     SUInfo.save().then(()=>{
         //res.render('login.pug', params);
-        //res.send("your Sign information has been submitted! go to the Login page now");
+        res.send("your Sign information has been submitted! go to the Login page now");
     }).catch(()=>{
         res.status(400).send("Please Try Again Later")
     })
