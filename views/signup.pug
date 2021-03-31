@@ -8,7 +8,7 @@ block style
         include ../public/css/chatting.css
 block script 
     script 
-        include ../public/js/signup.js
+        include ../src/models/signup.js
         include ../public/js/navbar.js     
 block content
     div.signupWrapper 
@@ -16,7 +16,7 @@ block content
         div.signFormBg
         div.SUHeading
             h1 SignUp 
-            | *All Are Required fields 
+            | *All fields are required 
         div.basicInfo
             form(action="/signup", method="post", class="SUform", onsubmit="return val()") 
                 | Your Name 
