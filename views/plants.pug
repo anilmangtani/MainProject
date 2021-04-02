@@ -6,6 +6,7 @@ block style
         include ../public/css/base.css
         include ../public/css/chatting.css
         include ../public/css/plants.css
+        include ../public/css/care.css
         
     body 
         main 
@@ -20,22 +21,67 @@ block style
                 .bs-plantpg-heading
                     h2 Best Selling plants
                 .bs-plantspg-products 
-                    a(href="http://").bs-plantspg-prdct1.sim-bs-plntspg
-                        h3 Plant Name
-                        h3 Price
-                    a(href="http://").bs-plantspg-prdct2.sim-bs-plntspg
-                        h3 Plant Name
-                        h3 Price
-                    a(href="http://").bs-plantspg-prdct3.sim-bs-plntspg
-                        h3 Plant Name
-                        h3 Price    
-                    a(href="http://").bs-plantspg-prdct4.sim-bs-plntspg
-                        h3 Plant Name
-                        h3 Price
+
+                    //-Mann bhai, iss pure code ko copy kerna hai
+                    .pgitem-prdct1.sim-bs-itemspg
+                        .pgitem-prdct-image
+                            a(href="http://") #[img(src="../static/images/planters/SquareConcretePlate.jpg", alt="", srcset="",width="100%", height="100%")]
+                        .pgitem-item-info-container    
+                            .pgitem-prdt-info
+                                h3 Square Concrete
+                                p Price
+                            .pgitem-prdt-link
+                                a(href="http://").Bnbtn.BuyButtonC#BuyButtonI
+                                    | Buy Now
+                                a(href="http://").AtcBtn.CartButtonC#CartButtonI 
+                                    | AddToCart
+                    //-yahan thank copy karna aur iske niche vala code dek same asa hii hai. yeh 1 product ka hai..line no 84 per jaa 
+
+                    .pgitem-prdct2.sim-bs-itemspg
+                        .pgitem-prdct-image
+                            a(href="http://") #[img(src="../static/images/planters/SquareConcretePlate.jpg", alt="", srcset="",width="100%", height="100%")]
+                        .pgitem-item-info-container    
+                            .pgitem-prdt-info
+                                h3 Square Concrete
+                                p Price
+                            .pgitem-prdt-link
+                                a(href="http://").Bnbtn.BuyButtonC#BuyButtonI
+                                    | Buy Now
+                                a(href="http://").AtcBtn.CartButtonC#CartButtonI 
+                                    | AddToCart
+
+
+                    .pgitem-prdct3.sim-bs-itemspg
+                        .pgitem-prdct-image
+                            a(href="http://") #[img(src="../static/images/planters/SquareConcretePlate.jpg", alt="", srcset="",width="100%", height="100%")]
+                        .pgitem-item-info-container    
+                            .pgitem-prdt-info
+                                h3 Square Concrete
+                                p Price
+                            .pgitem-prdt-link
+                                a(href="http://").Bnbtn.BuyButtonC#BuyButtonI
+                                    | Buy Now
+                                a(href="http://").AtcBtn.CartButtonC#CartButtonI 
+                                    | AddToCart 
+
+                    .pgitem-prdct4.sim-bs-itemspg
+                        .pgitem-prdct-image
+                            a(href="http://") #[img(src="../static/images/planters/SquareConcretePlate.jpg", alt="", srcset="",width="100%", height="100%")]
+                        .pgitem-item-info-container    
+                            .pgitem-prdt-info
+                                h3 Square Concrete
+                                p Price
+                            .pgitem-prdt-link
+                                a(href="http://").Bnbtn.BuyButtonC#BuyButtonI
+                                    | Buy Now
+                                a(href="http://").AtcBtn.CartButtonC#CartButtonI 
+                                    | AddToCart
 
             section.seasonal-plantsPage-Container
                 .snl-plntspg-heading
                     h2 Seasonal Plants
+
+                //- yeh har link alg alg products ki hai,  tuje voh code ko inse change kerna hai. Call kario      
                 .snl-plants-products
                     a(href="http://").snl-plantspg-prdct1.sim-bs-plntspg
                         h3 Product name

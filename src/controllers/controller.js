@@ -2,8 +2,8 @@ const mangoose  = require('mongoose');
 const bodyparser = require('body-parser');
 const signupfunc = require("../models/signup")
 const router = require("../router")
-
-
+//const SignUpSchema = require("../models/modelDb")
+//const LoginSchema = require("../models/modelDb")
 //creating a database in mangoose
 mangoose.connect('mongodb://localhost/OnlineNurseryOne', {useNewUrlParser: true, useUnifiedTopology: true});
 
@@ -130,9 +130,128 @@ exports.renderPlantsFromSeeds = (req,res)=>{
 //creating the controller for the buy item 
 exports.renderBuyItem = (req,res)=>{
     const params = {};
-    res.render('buyitem.pug',params);
+    res.render('productInfo.pug',{
+        img: '../static/images/care/transplatingTrowel.jpg',
+        name :'TransplantingTrowel',
+        rating: "4.5/5",
+        price: "Rs.160",
+        Avail: "Yes"
+        
+    });
 }
+//creating the controller for the Plastic Hand Trowel
+exports.renderPlasticHndTrwl = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/transimg2.jpg',
+        name :'Plastic Hand Trowel',
+        rating: "5/5",
+        price: "Rs.200",
+        Avail: "Yes"
+    })
+}
+//creating the controller for the  Plastic Hand Fork
+exports.renderPlasticHndFork = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/plastichandfork.jpg',
+        name :'Plastic Hand Fork',
+        rating: "5/5",
+        price: "Rs.200",
+        Avail: "Yes"
+    })
+}
+//creating the controller for the Plastic Hand Cultivator
+exports.renderPlasticHndCultivator = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/plastichandcultivator.jpg',
+        name :'Plastic Hand Cultivator',
+        rating: "5/5",
+        price: "Rs.200",
+        Avail: "Yes"
+    })
+}
+//creating the controller for the hedge shear
+exports.renderHedgeShear = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/hedgeshear.jpg',
+        name :'Hedge Shear',
+        rating: "5/5",
+        price: "Rs.200",
+        Avail: "Yes"
+    })
+}
+//creating the controller for the water can
+exports.renderWaterCan = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/watercan.jpg',
+        name :'Water Can',
+        rating: "5/5",
+        price: "Rs.150",
+        Avail: "Yes"
+    })
+}
+//creating the controller for the bonsai set
+exports.renderBonsaiSet = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/bonsaiset.jpg',
+        name :'Bonsai set',
+        rating: "4.5/5",
+        price: "Rs.500",
+        Avail: "Yes"
+    })
+}
+//creating the controller for the Three prong Hand set
+exports.renderThreeProngHS = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/Threeproghand.jpg',
+        name :'Three Prong Hand Set',
+        rating: "5/5",
+        price: "Rs.450",
+        Avail: "Yes"
+    })
+}
+//creating the controller for the Fertilizer - Sterameal
+exports.renderFertSterameal = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/Fertsterameal.jpg',
+        name :'Sterameal Fertilizer',
+        rating: "5/5",
+        price: "Rs.80/Kg",
+        Avail: "Yes"
+    })
+}
+//creating the controller for the Fertilizer - Cocopeat
+exports.renderFertCocopeat = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/Fertcocopeat.jpg',
+        name: 'Cocopeat Fertilizer',
+        rating : '4.5/5',
+        price: "Rs.70/kg",
+        Avail:"Yes"
 
+    })
+}
+//creating the controller for the Fertilizer - Exfoliated
+exports.renderFertExfoiled = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/Fertexfoliated.jpg',
+        name: 'Exfoliated Fertilizer',
+        rating : '4.5/5',
+        price: "Rs.80/kg",
+        Avail:"Yes"
+
+    })
+}
+//creating the controller for the Fertilizer - Jeevamrut
+exports.renderFertJeevamrut = (req,res)=>{
+    res.render('productInfo.pug',{
+        img: '../static/images/care/Fertjeevamrut.jpg',
+        name: 'Jeevamrut Fertilizer',
+        rating : '5/5',
+        price: "Rs.80 per bottle",
+        Avail:"Yes"
+
+    })
+}  
 //creating the controller for the chatting 
 exports.renderChatting =  (req, res)=>{
     const params = {};

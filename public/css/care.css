@@ -85,6 +85,7 @@ main{
     border: 3px solid black;
     width: 95%;
     margin: 5px auto;
+    
 }
 /*styling the item info container*/
 .pgitem-item-info-container {
@@ -94,7 +95,6 @@ main{
 /*styling the information of the item*/
 .pgitem-prdt-info{
     display: grid;
-    border: 1px solid black;
     height: 30%;
     width: 49%;
     line-height: 1.4em;
@@ -114,21 +114,36 @@ main{
     width: 40%;
 }
 /*styling the buttons in the link container */
-.pgitem-prdt-link input{
-    height: 35px;
-}
-/*styling the buybutton in the container*/
 .pgitem-prdt-link .BuyButtonC{
+    height: 30px;
+    width:90%;
+    text-align: center;
     border-radius: 5px;
+    margin: 1px auto;
     margin-bottom: 2px;
     background-color:rgba(13, 218, 139, 0.993);
     font-family: cursive;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px grey;
+}
+.pgitem-prdt-link .BuyButtonC:hover{
+    box-shadow: 0px 0px 15px grey;
 }
 /*styling the add to cart in the container*/
 .pgitem-prdt-link .CartButtonC{
+    height: 30px;
+    width:90%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px auto;
     border-radius: 5px;
     background-color:rgba(241, 245, 8, 0.993);
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px grey;
     font-family: cursive;
+}
+.pgitem-prdt-link .CartButtonC:hover{
+    box-shadow: 0px 0px 15px grey;
 }
 /*styling the links in the contanier*/
 .pgitems-products a{

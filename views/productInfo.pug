@@ -1,0 +1,42 @@
+extends base.pug
+block style
+    style 
+        include ../public/css/base.css
+        include ../public/css/productInfo.css
+    body 
+        main
+            section.BasicInfo
+                .prdtImg-Parent
+                    .prdtImg
+                        img(src=img, alt="", srcset="",height="100%", width="100%")
+                .prdtDetails
+                    table
+                        tr
+                            td Name:
+                            td= name
+                        tr
+                            td Rating:
+                            td= rating
+                        tr
+                            td Price:
+                            td= price
+                        tr
+                            td Water:
+                            td= water
+                        tr
+                            td Availablity:
+                            td= Avail
+
+                    .pgitem-prdt-link
+                        a(href="http://").Bnbtn.BuyButtonC#BuyButtonI.simbtn
+                            | Buy Now
+                        a(href="http://").AtcBtn.CartButtonC#CartButtonI.simbtn 
+                            | Add To Cart 
+    
+
+
+                    
+
+
+
+        

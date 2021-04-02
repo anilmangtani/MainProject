@@ -113,19 +113,23 @@ main{
     display: grid;
     width: 40%;
 }
-/*styling the buttons in the link container */
-.pgitem-prdt-link input{
-    height: 35px;
-}
-/*styling the buybutton in the container*/
 .pgitem-prdt-link .BuyButtonC{
+    height: 30px;
+    width:90%;
+    text-align: center;
     border-radius: 5px;
+    margin: 1px auto;
     margin-bottom: 2px;
     background-color:rgba(13, 218, 139, 0.993);
     font-family: cursive;
 }
 /*styling the add to cart in the container*/
 .pgitem-prdt-link .CartButtonC{
+    height: 30px;
+    width:90%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px auto;
     border-radius: 5px;
     background-color:rgba(241, 245, 8, 0.993);
     font-family: cursive;

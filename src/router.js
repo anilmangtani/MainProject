@@ -45,8 +45,18 @@ router.get('/beginner-guide',controller.renderBeginnerGuide);
 router.get('/how-to-grow-plants-from-seeds',controller.renderPlantsFromSeeds);
 
 //creating the router for the buy item pug
-router.get('/buyitem',controller.renderBuyItem);
-
+router.get('/TransplantingTrowel',controller.renderBuyItem);
+router.get('/PlasticHandTrowel',controller.renderPlasticHndTrwl);
+router.get('/PlasticHandFork',controller.renderPlasticHndFork);
+router.get('/PlasticHandCultivator',controller.renderPlasticHndCultivator);
+router.get('/hedgeShear',controller.renderHedgeShear);
+router.get('/watercan',controller.renderWaterCan);
+router.get('/bonsaiset',controller.renderBonsaiSet);
+router.get('/ThreeProngHS',controller.renderThreeProngHS);
+router.get('/SteramelFert',controller.renderFertSterameal);
+router.get('/cocopeatFert',controller.renderFertCocopeat);
+router.get('/ExfoliatedFret',controller.renderFertExfoiled);
+router.get('/JeevamrtuFret',controller.renderFertJeevamrut);
 //creatng the router for the chatting
 router.get('/chatting', controller.renderChatting);
 
