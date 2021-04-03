@@ -1,7 +1,7 @@
 const mangoose  = require('mongoose');
 const bodyparser = require('body-parser');
-const signupfunc = require("../../models/signup")
-const router = require("../../../routes/router")
+const signupfunc = require("../models/signup")
+const router = require("../../routes/router")
 //const SignUpSchema = require("../models/modelDb")
 //const LoginSchema = require("../models/modelDb")
 //creating a database in mangoose
@@ -35,9 +35,7 @@ exports.renderLoginPage = (req, res)=>{
 exports.renderLoginInfo =  (req, res)=>{
     var LoInfo = new LgInformation(req.body)
     LoInfo.save().then(()=>{
-       res.send("Login Done!!");
-       console.log(req.body);
-       //res.render('home.pug');
+       res.redirect('/home');
     }).catch((error)=>{
         res.send("Some Error has occured! Sorry");
     }) 

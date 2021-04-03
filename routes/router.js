@@ -27,7 +27,7 @@ const { renderLoginPage,
         renderFertCocopeat,
         renderFertExfoiled,
         renderFertJeevamrut,
-        renderChatting } = require("../src/http/controllers/controller")
+        renderChatting } = require("../src/controllers/controller")
 
 //creating router for the login page
 router.get('/login', renderLoginPage);
