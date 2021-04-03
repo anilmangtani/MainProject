@@ -35,9 +35,7 @@ exports.renderLoginPage = (req, res)=>{
 exports.renderLoginInfo =  (req, res)=>{
     var LoInfo = new LgInformation(req.body)
     LoInfo.save().then(()=>{
-       res.send("Login Done!!");
-       console.log(req.body);
-       //res.render('home.pug');
+       res.redirect('/home');
     }).catch((error)=>{
         res.send("Some Error has occured! Sorry");
     }) 
