@@ -1,101 +1,85 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        block title  
-        block style 
-            style 
-                include ../public/css/base.css
-            style     
-                include ../public/css/chatting.css
-             
-    body
-        nav.basenavbar 
-            .NBWrapper 
-                ul.navlist#mytopnav
-                    li #[a.active(href="/home") Home]
-                    li #[a(href="/plants") Plants]
-                    li #[a(href="/fruit") Fruits]
-                    li #[a(href="/vegetable") Vegetables]
-                    li #[a(href="/gift") Gift Item]
-                    li #[a(href="/Planter") Planters]
-                    li #[a(href="/care") Care&Decor]
-                    li #[a(href="/information") Information]
-                    li #[a(href="") Blogs]
-                    li #[a(href="/login") Log In]
-                    li #[a(href="/signup") My Account]
-                .navmenu#navbutton 
-                    .menu-line 
-                    .menu-line 
-                    .menu-line 
-        main
-            //- nav.ChatBox
-                .chattingNavBar#chatnavbar
-                    .chattingContent
-                        .Chatlogo
-                            h1 TheChatBox
-                        .Chatlinks
-                            .chatLinksLogo 
-                                a(href="mailto:") #[img(src="../static/images/EmailLogo.jpg")] 
-
-                                a(href="tel:+00000000") #[img(src="../static/images/PhoneLogo.jpg")]
-                                
-                .chatBoxContainer#chtcontainer
-                    
-                .ChatBoxLogo#chtbtn
-                    img(src="../static/images/ChatLogo.jpg", alt="", srcset="")
-                .ChatDisplay         
-        block content  
-        
-        footer.footerBase
-            .footercontainer
-                .ournote.footeritems
-                    h1 ThankYou! 
-                    p For for promoting greenry and plantation
-                    form(action="/home", method="post", class="subsForm", id="subsFormId")
-                        input(type="email", name="SubEmail", placeholder="Enter your Email",class="EmailSubs")
-                        input(type="submit", value="SUBSCRIBE", class="btnSubs")
-                .account-links.footeritems
-                    h1 Follow Us
-                        .social-media-links
-                            .iconsSetting
-                                .facebook-icon
-                            .iconsSetting
-                                .insta-icon
-                            .iconsSetting
-                                .snap-icon
-                            .iconsSetting
-                                .twitter-icon
-                            .iconsSetting
-                                .email-icon
-                            .iconsSetting
-                                .pint-icon 
-                .Basic-info.footeritems
-                    h1 Basic-info
-                    .Basic-Container
-                        a(href="#") Our policy
-                        a(href="#") Shipping Policy
-                        a(href="#") Refund Policy
-                        a(href="#") Security Issues
-                        a(href="#") Terms and Condition
-                .Basic-Help.footeritems
-                    h1 Help
-                    .Basic-Container
-                        a(href="#") Payment
-                        a(href="#") Shipping
-                        a(href="#") Products
-                        a(href="tel:+") Call Us
-                        a(href="mailto:") Mail us                       
-                .Our-Address.footeritems
-                    h1 Address
-                    .Basic-Container
-                        | Green World, gopalpura TonkRoad Jaipur 302018
-                    .Copyright
-                        | &#169; Anil Mangtani 
-        block script  
-            script 
-                include ../public/js/navbar.js     
-
-        
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/chatting.css">
+  </head>
+  <body>
+    <nav class="basenavbar"> 
+      <div class="NBWrapper"> 
+        <ul class="navlist" id="mytopnav">
+          <li><a class="active" href="/home">Home</a></li>
+          <li><a href="/plants">Plants</a></li>
+          <li><a href="/fruit">Fruits</a></li>
+          <li><a href="/vegetable">Vegetables</a></li>
+          <li><a href="/gift">Gift Item</a></li>
+          <li><a href="/Planter">Planters</a></li>
+          <li><a href="/care">Care&Decor</a></li>
+          <li><a href="/information">Information</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="/login">Log In</a></li>
+          <li><a href="/signup">My Account</a></li>
+        </ul>
+        <div class="navmenu" id="navbutton"> 
+          <div class="menu-line"> </div>
+          <div class="menu-line"> </div>
+          <div class="menu-line"> </div>
+        </div>
+      </div>
+    </nav>
+    <main></main>
+    <footer class="footerBase">
+      <div class="footercontainer">
+        <div class="ournote footeritems">
+          <h1>ThankYou! </h1>
+          <p>For for promoting greenry and plantation</p>
+          <form class="subsForm" action="/home" method="post" id="subsFormId">
+            <input class="EmailSubs" type="email" name="SubEmail" placeholder="Enter your Email">
+            <input class="btnSubs" type="submit" value="SUBSCRIBE">
+          </form>
+        </div>
+        <div class="account-links footeritems">
+          <h1>Follow Us
+            <div class="social-media-links">
+              <div class="iconsSetting">
+                <div class="facebook-icon"></div>
+              </div>
+              <div class="iconsSetting">
+                <div class="insta-icon"></div>
+              </div>
+              <div class="iconsSetting">
+                <div class="snap-icon"></div>
+              </div>
+              <div class="iconsSetting">
+                <div class="twitter-icon"></div>
+              </div>
+              <div class="iconsSetting">
+                <div class="email-icon"></div>
+              </div>
+              <div class="iconsSetting">
+                <div class="pint-icon"> </div>
+              </div>
+            </div>
+          </h1>
+        </div>
+        <div class="Basic-info footeritems">
+          <h1>Basic-info</h1>
+          <div class="Basic-Container"><a href="#">Our policy</a><a href="#">Shipping Policy</a><a href="#">Refund Policy</a><a href="#">Security Issues</a><a href="#">Terms and Condition</a></div>
+        </div>
+        <div class="Basic-Help footeritems">
+          <h1>Help</h1>
+          <div class="Basic-Container"><a href="#">Payment</a><a href="#">Shipping</a><a href="#">Products</a><a href="tel:+">Call Us</a><a href="mailto:">Mail us                       </a></div>
+        </div>
+        <div class="Our-Address footeritems">
+          <h1>Address</h1>
+          <div class="Basic-Container">Green World, gopalpura TonkRoad Jaipur 302018</div>
+          <div class="Copyright">&#169; Anil Mangtani </div>
+        </div>
+      </div>
+    </footer>
+    <script> </script>
+  </body>
+</html>

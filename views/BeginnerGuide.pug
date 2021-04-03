@@ -1,69 +1,85 @@
-extends base.pug
-block title
-    title Beginner's Guide
-block style
-    style 
-        include ../public/css/base.css
-        include ../public/css/chatting.css
-        include ../public/css/BegGuide.css
-    body 
-        main
-            .infoCntnt-bg
 
-            .infoCntnt-heading-box
-                .infoCntnt-heading
-                    h1 How To Take Care Of Plant
+<title>Beginner's Guide</title>
+<link rel="stylesheet" href="../public/css/base.css">
+<link rel="stylesheet" href="../public/css/chatting.css">
+<link rel="stylesheet" href="../public/css/BegGuide.css">
 
-            .infoCntnt-infoContainer
-                .infoCntnt-infoheading
-                    h2 10 simple tips to take care of your plant!
-                .infoCntnt-infoBox
-                    .infoCntnt-tip1.infoCntnt-SC
-                        h3 1. Feel the Soil to Know How Often to Water Your Plants
-                        p For most plants, the golden rule is to see if the first inch or so of soil is dry. If dry, this is an indication that the plant needs water. If there are leaves that have shriveled or are dry/discolored, the plant might need a little extra water than a regular routine.
-                    .infoCntnt-tip2.infoCntnt-SC
-                        h3 2. It’s Better to Underwater Your Plants Than Overwater Them
-                        p A plant can recover faster from being deprived of water than one given excess water.To rescue an overwatered plant, you may need to repot the plant and remove any unhealthy roots and overwatered soil before moving the plant into a new pot.  
-                    .infoCntnt-tip3.infoCntnt-SC
-                        h3 3. Skip Fertilization for Houseplants if You’re Unsure
-                        p  If you’re unsure of how much or what type of fertilization to use when planting, it’s better to skip that step altogether. Too much fertilization may actually end up killing your plant rather than helping it.
-                    .infoCntnt-tip4.infoCntnt-SC
-                        h3 4. Water Deeply, Rather Than Lightly and Frequently
-                        p Watering deeply, which entails watering your plants heavily with water, allows for all the roots to grab a drink. To avoid overwatering, slowly water your plant and watch for when the water is not draining through the soil anymore. Once you notice this, stop there.
-                    .infoCntnt-tip5.infoCntnt-SC
-                        h3 5. Prune Your Plants
-                        p Getting rid of old-growth on your plants will help your plants grow again. This is kind of like how trimming the dead ends of your hair will help your hair grow again.
-                    .infoCntnt-tip6.infoCntnt-SC
-                        h3 6. Don’t Repot Your Plants by Pulling Them
-                        p Pulling a plant out will not only ruin the stems, leaves, and blossoms but will also tear roots. Damaged roots need to heal before they can fully take in nutrients, so pulling your plant out of its pot is never a good plan.
-                    .infoCntnt-tip7.infoCntnt-SC
-                        h3 7. Try to Replicate Your Plant’s Native Habitat
-                        p This includes the type of soil you buy, humidity, temperature, water and sunlight. Researching your plant’s native habitat will help you discover the climate and terrain your plant prefers.
-                    .infoCntnt-tip8.infoCntnt-SC
-                        h3 8. Most Plants Flourish in High Humidity
-                        p With most homes having dry air, especially in the winter, you may want to adjust the air. This could be as simple as purchasing a humidifier for the rooms of your home that contain your adored plants.
-                    .infoCntnt-tip9.infoCntnt-SC
-                        h3 9.  Keep an Eye Out for Yellow or Droopy Leaves
-                        p We will provide you to the correct fertilizer for each plant because depending on the terrain your plant has come from, the plant will require a certain fertilizer to heal back to full health. Along with fertilizer.
-                        
-                    .infoCntnt-tip10.infoCntnt-SC
-                        h3 10. Make Sure Pots Have Drainage Holes
-                        p Having a way for pots to drain is vital for your plant and the soil. Proper drainage allows the roots to receive air, rather than sitting in water and suffocating the roots.
-
-
-            section.infoCntnt-YoutubeVideos
-                .infoCntnt-YoutubeVideos-Heading
-                    h1 YouTube Videos
-                    p if you like to watch videos then this is for you
-                .infoCntnt-Youtube-Container
-                    .infoCntnt-youtube-Box
-                        .infoCntnt-Videos
-                            iframe(width='100%' height='100%' src='https://www.youtube.com/embed/LN_JLxrqY_M' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-                            h3 Repotting your plant
-                        .infoCntnt-Videos
-                            iframe(width='100%' height='100%' src='https://www.youtube.com/embed/kWr8SvbUGMo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-                            h3 5 Air purifying Indoor Plants
-                        .infoCntnt-Videos
-                            iframe(width='100%' height='100%' src='https://www.youtube.com/embed/GOGPsIYXbr4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-                            h3 Low Light Indoor Plants
-
+<body> 
+  <main>
+    <div class="infoCntnt-bg"></div>
+    <div class="infoCntnt-heading-box">
+      <div class="infoCntnt-heading">
+        <h1>How To Take Care Of Plant</h1>
+      </div>
+    </div>
+    <div class="infoCntnt-infoContainer">
+      <div class="infoCntnt-infoheading">
+        <h2>10 simple tips to take care of your plant!</h2>
+      </div>
+      <div class="infoCntnt-infoBox">
+        <div class="infoCntnt-tip1 infoCntnt-SC">
+          <h3>1. Feel the Soil to Know How Often to Water Your Plants</h3>
+          <p>For most plants, the golden rule is to see if the first inch or so of soil is dry. If dry, this is an indication that the plant needs water. If there are leaves that have shriveled or are dry/discolored, the plant might need a little extra water than a regular routine.</p>
+        </div>
+        <div class="infoCntnt-tip2 infoCntnt-SC">
+          <h3>2. It’s Better to Underwater Your Plants Than Overwater Them</h3>
+          <p>A plant can recover faster from being deprived of water than one given excess water.To rescue an overwatered plant, you may need to repot the plant and remove any unhealthy roots and overwatered soil before moving the plant into a new pot.  </p>
+        </div>
+        <div class="infoCntnt-tip3 infoCntnt-SC">
+          <h3>3. Skip Fertilization for Houseplants if You’re Unsure</h3>
+          <p> If you’re unsure of how much or what type of fertilization to use when planting, it’s better to skip that step altogether. Too much fertilization may actually end up killing your plant rather than helping it.</p>
+        </div>
+        <div class="infoCntnt-tip4 infoCntnt-SC">
+          <h3>4. Water Deeply, Rather Than Lightly and Frequently</h3>
+          <p>Watering deeply, which entails watering your plants heavily with water, allows for all the roots to grab a drink. To avoid overwatering, slowly water your plant and watch for when the water is not draining through the soil anymore. Once you notice this, stop there.</p>
+        </div>
+        <div class="infoCntnt-tip5 infoCntnt-SC">
+          <h3>5. Prune Your Plants</h3>
+          <p>Getting rid of old-growth on your plants will help your plants grow again. This is kind of like how trimming the dead ends of your hair will help your hair grow again.</p>
+        </div>
+        <div class="infoCntnt-tip6 infoCntnt-SC">
+          <h3>6. Don’t Repot Your Plants by Pulling Them</h3>
+          <p>Pulling a plant out will not only ruin the stems, leaves, and blossoms but will also tear roots. Damaged roots need to heal before they can fully take in nutrients, so pulling your plant out of its pot is never a good plan.</p>
+        </div>
+        <div class="infoCntnt-tip7 infoCntnt-SC">
+          <h3>7. Try to Replicate Your Plant’s Native Habitat</h3>
+          <p>This includes the type of soil you buy, humidity, temperature, water and sunlight. Researching your plant’s native habitat will help you discover the climate and terrain your plant prefers.</p>
+        </div>
+        <div class="infoCntnt-tip8 infoCntnt-SC">
+          <h3>8. Most Plants Flourish in High Humidity</h3>
+          <p>With most homes having dry air, especially in the winter, you may want to adjust the air. This could be as simple as purchasing a humidifier for the rooms of your home that contain your adored plants.</p>
+        </div>
+        <div class="infoCntnt-tip9 infoCntnt-SC">
+          <h3>9.  Keep an Eye Out for Yellow or Droopy Leaves</h3>
+          <p>We will provide you to the correct fertilizer for each plant because depending on the terrain your plant has come from, the plant will require a certain fertilizer to heal back to full health. Along with fertilizer.</p>
+        </div>
+        <div class="infoCntnt-tip10 infoCntnt-SC">
+          <h3>10. Make Sure Pots Have Drainage Holes</h3>
+          <p>Having a way for pots to drain is vital for your plant and the soil. Proper drainage allows the roots to receive air, rather than sitting in water and suffocating the roots.</p>
+        </div>
+      </div>
+    </div>
+    <section class="infoCntnt-YoutubeVideos">
+      <div class="infoCntnt-YoutubeVideos-Heading">
+        <h1>YouTube Videos</h1>
+        <p>if you like to watch videos then this is for you</p>
+      </div>
+      <div class="infoCntnt-Youtube-Container">
+        <div class="infoCntnt-youtube-Box">
+          <div class="infoCntnt-Videos">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LN_JLxrqY_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <h3>Repotting your plant</h3>
+          </div>
+          <div class="infoCntnt-Videos">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kWr8SvbUGMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <h3>5 Air purifying Indoor Plants</h3>
+          </div>
+          <div class="infoCntnt-Videos">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GOGPsIYXbr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <h3>Low Light Indoor Plants</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
