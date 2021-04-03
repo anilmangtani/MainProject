@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const controller = require("./controllers/controller")
+const controller = require("../src/http/controllers/controller")
 
 //creating router for the login page
 router.get('/login', controller.renderLoginPage);

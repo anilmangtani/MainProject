@@ -2,9 +2,9 @@ const express = require('express');
 const mangoose = require('mongoose');
 const fs = require('fs');
 const app = express();
-const port = 80;
+const port = process.env.port || 80;
 const path =  require('path');
-const router = require("./router");
+const router = require("../routes/router");
 
 
 app.use(express.urlencoded({extended: false}))

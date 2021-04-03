@@ -1,7 +1,7 @@
 const mangoose  = require('mongoose');
 const bodyparser = require('body-parser');
-const signupfunc = require("../models/signup")
-const router = require("../router")
+const signupfunc = require("../../models/signup")
+const router = require("../../../routes/router")
 //const SignUpSchema = require("../models/modelDb")
 //const LoginSchema = require("../models/modelDb")
 //creating a database in mangoose

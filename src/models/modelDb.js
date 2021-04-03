@@ -1,26 +1,38 @@
-const mangoose  = require('mongoose');
+const mongoose  = require('mongoose');
+const Schema = mongoose.Schema
 const bodyparser = require('body-parser');
 const signupfunc = require("../models/signup")
-const router = require("../router")
+const router = require("../../routes/router")
 
 
 //creating a database in mangoose
-mangoose.connect('mongodb://localhost/OnlineNurseryOne', {useNewUrlParser: true, useUnifiedTopology: true});
+mangoose.connect('mongodb://localhost/OnlineNursery', {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 //creating the schema for the signup information
-var SignUpSchema = new mangoose.Schema({
-    Name : String,
-    Email : String,
-    Password : String,
-    Address : String,
-    PhoneNo : Number
+const SignUpSchema = new Schema({
+    Name : {type: String, required: true},
+    Email : {type: String, required: true},
+    Password : {type: String, required: true},
+    Address : {type: String, required: true},
+    PhoneNo : {type: Number, required: true}
 });
-var SUInformation = mangoose.model('SignUpInfo', SignUpSchema);
+const SUInformation = mongoose.model('SignUpInfo', SignUpSchema);
+
+module.exports = SUInformation;
 
 //Define Mangoose schema in login form
-const LoginSchema = new mangoose.Schema({
-    email: String,
-    pass : String
+const LoginSchema = new Schema({
+    email: {type: String, required: true},
+    pass : {type: String, required: true}
 });
-const LgInformation = mangoose.model('LoginInfo', LoginSchema);
+const LgInformation = mongoose.model('LoginInfo', LoginSchema);
+
+module.exports = LgInformation; 
+
+//creating the schema for add to plants
+const Schema = mongoose.Schema;
+
+new Schema({
+
+})
