@@ -34,6 +34,7 @@ router.get('/login', renderLoginPage);
 router.post('/login', renderLoginInfo);
 
 //creating router for the home page
+router.get('/', renderHomePage);
 router.get('/home', renderHomePage);
 
 //creating the router for the singup page
